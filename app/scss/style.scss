@@ -60,6 +60,10 @@
         color: $darkshade50;
         margin-right: 20px;
         &:hover{color: $darkshade100;}
+        &--active{
+            font-weight: 700;
+            margin-right: 20px;
+        }
     }
     &__list-btn-enter,
     &__list-btn-reg{
