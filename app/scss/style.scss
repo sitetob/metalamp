@@ -118,5 +118,101 @@
     opacity: 1;
     visibility: visible;
     transform: rotateX(0deg);
-
+}
+.footer{
+    &__bar{
+        height: 70px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        background: #FFF;
+        box-shadow: 0px 10px 20px 0px $darkshade5;
+    }
+    &__info-social-twitter,
+    &__info-social-facebook {
+        font-size: 24px;
+        line-height: 97.75%;
+        margin-right: 20px;
+        background: var(--Primary-Gradient, linear-gradient(180deg, $purple 0%, #8BA4F9 100%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        &:hover{opacity: .9;}
+    }
+    &__info-social-instagram{
+        font-size: 24px;
+        line-height: 97.75%;
+        background: var(--Primary-Gradient, linear-gradient(180deg, $purple 0%, #8BA4F9 100%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        &:hover{opacity: .9;}
+    }
+    &__widgets{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 372px;  
+        padding: 100px 0;
+    }
+   &__widgets-line {
+        display: flex;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 1px;
+            width: 100%;
+            border: 1px solid $darkshade5;
+        }          
+    }
+    &__widgets-logo{
+        max-width: 260px;
+    }
+    &__widgets-logo-img{
+        margin-bottom: 20px;
+    }   
+    &__widgets-nav{
+        max-width: 143px;
+    }
+    &__widgets-nav-link{
+        color: $darkshade50;
+        margin-top: 21px;
+        display: block;
+        &:hover{color: $darkshade100;}
+    }
+    &__widgets-about{
+        max-width: 108px;
+    }
+    &__widgets-support{
+        max-width: 149px;
+    }
+    &__widgets-subscription{
+        max-width: 260px;     
+    }
+    &__widgets-subscription-form{
+        position: relative;
+    }
+    &__widgets-subscription-text{
+        margin-top: 21px;
+    }
+    &__widgets-subscription-input{
+        display: block;
+        margin-top: 21px;
+        width: 100%;
+        background-color: transparent;
+        border-color: $darkshade5;
+        &::placeholder{color:$darkshade25; padding: 12px 15px;}        
+    }
+    &__widgets-subscription-btn{
+        position: absolute;
+        border: none;
+        background-color: transparent;        
+        top: 5px;
+        right: 5px;
+        cursor: pointer;
+    }
 }
