@@ -89,4 +89,13 @@ exports.cleanDist = cleanDist;
 exports.build = series(cleanDist, images, build);
 exports.default = parallel(styles ,scripts ,browsersync, watching);
 
-
+'use strict';
+const gulp = require('gulp');
+const pug = require('gulp-pug');
+gulp.task('pug', function() {
+  return gulp.src('app/template/*.pug')
+    .pipe(pug({
+      pretty:true
+        }))
+    .pipe(gulp.dest('app'));
+})
