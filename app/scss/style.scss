@@ -76,4 +76,43 @@
         color:#FFF;
         z-index: 1;
     }
+    &__list-more{
+        display: inline;
+        &:hover{opacity: .8;}
+    }
+    &__list-submenu{
+        min-width: 75px;
+        position: absolute;
+        z-index: 5;
+        transform-origin: 0 0;
+        transform: rotateX(-90deg);
+        transition: .3s linear;
+        visibility: hidden;
+        opacity: 0;
+    }
+    &__list-submenu-li{
+        position: relative;
+        
+    }
+    &__list-submenu .menu__list-submenu{
+        position: absolute;
+        top: 0;
+        left: 100%;
+        transition: transform .3s linear;
+    }
+    &__list-submenu-link{
+        display: block;
+        border-bottom: 1px solid $darkshade25;
+        padding: 2px 10px;
+        background-color: $darkshade5;
+        font-size: 12px;
+        text-align: left;
+        &:hover{color:$green;border-bottom: 1px solid $green;}
+    }
+}
+.menu__list li:hover > .menu__list-submenu{
+    opacity: 1;
+    visibility: visible;
+    transform: rotateX(0deg);
+
 }
