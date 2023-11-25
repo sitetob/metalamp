@@ -2,13 +2,23 @@ $(function () {
     const picker = new easepick.create({
         element: document.getElementById('checkin'),
         css: [
-            "https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.1/dist/index.css"
+            "./css/picker.css"
         ],
         zIndex: 3,
         lang: "ru-RU",
-        format: "DD.MM.YYYY",        
+        format: "DD.MM.YYYY",    
+        autoApply: false,
+        locale: {
+            cancel: "Очистить",
+            apply: "Применить",
+        },
         RangePlugin: {
-            elementEnd: document.getElementById('checkout'),            
+            elementEnd: document.getElementById('checkout'), 
+            locale: {
+                one: "день",
+                two: "дня",
+                other: "дней",
+            },           
         },
         plugins: ['RangePlugin']
     })
