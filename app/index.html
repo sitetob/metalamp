@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Landing Page</title>
   <link rel="stylesheet" href="css/style.min.css">
-
 </head>
 <body>
   <div class="wrapper">
@@ -115,7 +114,50 @@
     </div>
   </header>  
   
-    <main class="main"></main>
+    <main class="main">      
+      <div class="home__box"> 
+        <div class="container">
+        <form class="home__box-form">
+          <h1 class="home__box-form-title">Найдём номера под ваши пожелания</h1>
+          <div class="home__box-form-inputs">
+          <label>прибытие<br>          
+            <input class="home__box-form-arrival" value="2019-08-19" type="date">    
+          </label> 
+          </div>
+          <div class="home__box-form-inputs">   
+          <label>выезд<br>
+            <input class="home__box-form-exit" value="2019-08-23" type="date">    
+          </label>  
+          </div>
+          <div class="home__box-form-box-select">
+          <label>гости<br>
+            <select class="home__box-form-select">
+              <option selected value="s1">Взрослые</option>
+              <option value="s2">Дети</option>
+              <option value="s3">Младенцы</option>
+              <button>Очистить</button>
+              <button>Применить</button>
+            </select>
+          </label>  
+          <button class="home__box-form-submit" type="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="320" height="44" viewBox="0 0 320 44" fill="none">
+              <path d="M0 22C0 9.84974 9.84974 0 22 0H298C310.15 0 320 9.84974 320 22C320 34.1503 310.15 44 298 44H22C9.84974 44 0 34.1503 0 22Z" fill="url(#paint0_linear_18373_5)"/>
+              <defs>
+              <linearGradient id="paint0_linear_18373_5" x1="160" y1="0" x2="160" y2="44" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#BC9CFF"/>
+              <stop offset="1" stop-color="#8BA4F9"/>
+              </linearGradient>
+              </defs>
+              </svg>
+              <a class="home__box-form-submit-text" href="#!">подобрать номер</a>
+              <span class="home__box-form-submit-arrow">&#8594;</span>
+          </button>  
+        </div>
+        </form>  
+        <p class="home__box-text">Лучшие номера для вашей работы, отдыха и просто вдохновения</p>
+      </div>
+    </div>
+    </main>
 
     <div class="footer__content">
         <div class="container">
