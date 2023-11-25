@@ -3,6 +3,8 @@
 @import 'reset';
 @import 'libs';
 @import 'global';
+@import url(../css/fontawesome.min.css);
+@import url(../css/brands.min.css);
 
 .header{    
     background: #FFF;
@@ -108,7 +110,7 @@
         display: block;
         border-bottom: 1px solid $darkshade25;
         padding: 2px 10px;
-        background-color: $darkshade5;
+        background-color: rgba(#fff,.8);
         font-size: 12px;
         text-align: left;
         &:hover{color:$green;border-bottom: 1px solid $green;}
