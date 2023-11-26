@@ -336,7 +336,7 @@
     }
     &__items h1 {text-align: left;width: 100%;}
     &__search-form input{
-        margin-top: 5px;
+        margin-bottom: 20px;
         border-radius: 4px;
         border: 1px solid $darkshade25;
         background: #FFF;
@@ -363,5 +363,8 @@
 .aside{
     width: 270px;
     margin-right: 60px;
+    &__block-title{
+        margin-bottom: 5px;
+    }
     
 }
