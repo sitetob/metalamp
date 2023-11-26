@@ -1,0 +1,58 @@
+        <form class="home__box-form">
+          <h1 class="home__box-form-title">Найдём номера под ваши пожелания</h1>
+          <div class="home__box-form-input-check">
+          <label>прибытие<br></label>   
+            <input class="home__box-form-checkin" name="date-checkin" id="checkin" type="text">
+            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.5938 0.578125L12 1.98438L6 7.98438L0 1.98438L1.40625 0.578125L6 5.17188L10.5938 0.578125Z" fill="#1F2041" fill-opacity="0.5"/>
+            </svg>                    
+          </div>
+          <div class="home__box-form-input-exit">   
+          <label>выезд<br></label>
+            <input class="home__box-form-exit" name="date-exit" id="checkout" type="text">   
+            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.5938 0.578125L12 1.98438L6 7.98438L0 1.98438L1.40625 0.578125L6 5.17188L10.5938 0.578125Z" fill="#1F2041" fill-opacity="0.5"/>
+            </svg>            
+          </div>
+          <div class="home__box-form-box-select">
+          <label>гости<br></label> 
+            <div class="iqdropdown">
+              <p class="iqdropdown-selection"></p>
+              <div class="iqdropdown-menu">
+                <div class="iqdropdown-menu-option" data-id="item1">
+                  <div>
+                    <p class="iqdropdown-item">Взрослые</p>
+                  </div>
+                </div>
+                <div class="iqdropdown-menu-option" data-id="item2">
+                  <div>
+                    <p class="iqdropdown-item">Дети</p>
+                  </div>
+                </div>
+                <div class="iqdropdown-menu-option" data-id="item3">
+                  <div>
+                    <p class="iqdropdown-item">Младенцы</p>
+                  </div>
+                </div>
+                <div class="iqdropdown-menu-option-btn">
+                  <div> <button type="submit">Очистить</button></div>
+                  <div> <button type="submit" onclick="return false;">Применить</button></div>
+                </div>
+              </div>
+            </div>
+
+          <button class="home__box-form-submit" type="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="320" height="44" viewBox="0 0 320 44" fill="none">
+              <path d="M0 22C0 9.84974 9.84974 0 22 0H298C310.15 0 320 9.84974 320 22C320 34.1503 310.15 44 298 44H22C9.84974 44 0 34.1503 0 22Z" fill="url(#paint0_linear_18373_5)"/>
+              <defs>
+              <linearGradient id="paint0_linear_18373_5" x1="160" y1="0" x2="160" y2="44" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#BC9CFF"/>
+              <stop offset="1" stop-color="#8BA4F9"/>
+              </linearGradient>
+              </defs>
+              </svg>
+              <a class="home__box-form-submit-text" href="#!">подобрать номер</a>
+              <span class="home__box-form-submit-arrow">&#8594;</span>
+          </button>  
+        </div>
+        </form>  

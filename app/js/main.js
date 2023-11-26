@@ -22,8 +22,8 @@ $(function () {
         },
         plugins: ['RangePlugin']
     });
-
-    $(document).ready(() => {
+    
+ $(document).ready(() => {
         var elem = $('.iqdropdown');
         elem.iqDropdown({
             onChange: (id, count, totalItems) => {
@@ -47,5 +47,5 @@ $(function () {
                 targetItem.removeClass('empty');
         }
     };
-
+    
     })
