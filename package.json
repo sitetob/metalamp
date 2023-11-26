@@ -25,6 +25,7 @@
     "gulp-rigger": "^0.5.8",
     "gulp-sass": "^5.1.0",
     "gulp-uglify-es": "^2.0.0",
+    "item-quantity-dropdown": "^2.1.0",
     "jquery": "^3.5.1",
     "sass": "^1.58.0"
   }

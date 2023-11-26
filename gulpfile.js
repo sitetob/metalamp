@@ -42,13 +42,14 @@ function scripts() {
   return src([
     'node_modules/jquery/dist/jquery.js',
     'app/js/main.js',
+    'app/js/picker.js',
+    'node_modules/item-quantity-dropdown/lib/item-quantity-dropdown.min.js',
   ])
     .pipe(concat('main.min.js'))
     .pipe(uglify())
     .pipe(dest('app/js'))
     .pipe(browserSync.stream())
 }
-
 
 function styles() {
   return src('app/scss/style.scss')
