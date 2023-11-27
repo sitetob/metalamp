@@ -1,0 +1,139 @@
+<aside class="aside">          
+    <form class="rooms__search-form">
+      <div class="rooms__search-form-check">
+        <h3 class="aside__block-title">даты пребывания в отеле</h3>  
+          <input class="rooms__search-form-checkin" value="ДД.ММ.ГГГГ - ДД.ММ.ГГГГ" name="" id="checkin" type="text">
+          <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.5938 0.578125L12 1.98438L6 7.98438L0 1.98438L1.40625 0.578125L6 5.17188L10.5938 0.578125Z" fill="#1F2041" fill-opacity="0.5"/>
+          </svg>                    
+      </div>
+      <div class="rooms__search-form-box-select">
+        <h3 class="aside__block-title">гости</h3>  
+          <div class="iqdropdown">
+            <p class="iqdropdown-selection"></p>
+            <div class="iqdropdown-menu">
+              <div class="iqdropdown-menu-option" data-id="item1">
+                <div>
+                  <p class="iqdropdown-item">Взрослые</p>
+                </div>
+              </div>
+              <div class="iqdropdown-menu-option" data-id="item2">
+                <div>
+                  <p class="iqdropdown-item">Дети</p>
+                </div>
+              </div>
+              <div class="iqdropdown-menu-option" data-id="item3">
+                <div>
+                  <p class="iqdropdown-item">Младенцы</p>
+                </div>
+              </div>
+              <div class="iqdropdown-menu-option-btn">
+                <div> <button type="submit">Очистить</button></div>
+                <div> <button type="submit" onclick="return false;">Применить</button></div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="rooms__search-form-price">
+        <h3 class="aside__block-title">диапазон цены</h3>
+        <div class="rooms__search-form-slider">
+            <tc-range-slider 
+            slider-width="100%"
+            min="0" 
+            max="15000" 
+            value1="5000"
+            value2="10000" 
+            step="1000"
+            css-links="css/tcrs-themes.min.css"
+            theme="circle"       
+            generate-labels="true">
+            </tc-range-slider>
+      </div>
+        <span class="rooms__search-form-price-text">Стоимость за сутки пребывания в номере</span>
+      </div>
+      <div class="rooms__search-form-rules">
+        <h3 class="aside__block-title">правила дома</h3>
+        <div class="rooms__search-form-rules-form">
+        <form class="rooms__search-form-rules-form">
+           <div class="rooms__search-form-rules-form-checkbox">
+            <input type="checkbox" id="cb1"><label for="cb1">Можно курить</label>
+          </div>                  
+            <div class="rooms__search-form-rules-form-checkbox">
+            <input type="checkbox" id="cb2"><label for="cb2">Можно с питомцами</label>
+            </div>                  
+            <div class="rooms__search-form-rules-form-checkbox">
+            <input type="checkbox" id="cb3"><label for="cb3">Можно пригласить гостей<br>(до 10 человек)</label>
+            </div>
+        </form>
+        </div>
+      </div>
+      <div class="rooms__search-form-availability">
+        <h3 class="aside__block-title">доступность</h3>
+        <div class="rooms__search-form-availability-form">
+        <form class="rooms__search-form-availability-form">
+          <div class="rooms__search-form-availability-form-checkbox">
+           <input type="checkbox" id="cb4"><label for="cb4">Широкий коридор</label>
+           <p class="rooms__search-form-availability-form-text">Ширина коридоров в номере<br>не менее 91 см.</p>
+         </div>                  
+           <div class="rooms__search-form-availability-form-checkbox">
+           <input type="checkbox" id="cb5"><label for="cb5">Помощник для инвалидов</label>
+           <p class="rooms__search-form-availability-form-text">На 1 этаже вас встретит специалист<br>и проводит до номера.</p>
+           </div>                  
+       </form>
+       </div>
+      </div>
+      <div class="rooms__search-form-conveniences">
+        <h3 class="aside__block-title">удобства номера</h3>
+        <div class="iqdropdown">
+          <p class="iqdropdown-selection" data-selection-text="услуга" data-text-plural="услуг"></p>
+          <div class="iqdropdown-menu">
+            <div class="iqdropdown-menu-option" data-id="item4">
+              <div>
+                <p class="iqdropdown-item">Спальни</p>
+              </div>
+            </div>
+            <div class="iqdropdown-menu-option" data-id="item5">
+              <div>
+                <p class="iqdropdown-item">Кровати</p>
+              </div>
+            </div>
+            <div class="iqdropdown-menu-option" data-id="item6">
+              <div>
+                <p class="iqdropdown-item">Ванные комнаты</p>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+      <div class="rooms__search-form-additionally">
+        <div class="rooms__search-form-additionally-box">
+        <h3 class="aside__block-title">дополнительные удобства</h3>
+        <a class="rooms__search-form-additionally-link" href="#" id="click-to-hide">
+          <img class="rooms__search-form-additionally-more" src="images/svg/expand_more.svg" alt="More">            
+        </a>
+        </div>
+      <div class="rooms__search-form-additionally-form hide-element">
+        <form class="rooms__search-form-additionally-form">
+          <div class="rooms__search-form-additionally-form-checkbox">
+           <input type="checkbox" id="cb7"><label for="cb7">Завтрак</label>
+         </div>                  
+           <div class="rooms__search-form-additionally-form-checkbox">
+           <input type="checkbox" id="cb8"><label for="cb8">Письменный стол</label>
+           </div>                  
+           <div class="rooms__search-form-additionally-form-checkbox">
+           <input type="checkbox" id="cb9"><label for="cb9">Стул для кормления</label>
+           </div>
+           <div class="rooms__search-form-additionally-form-checkbox">
+            <input type="checkbox" id="cb10"><label for="cb10">Кроватка</label>
+            </div>
+            <div class="rooms__search-form-additionally-form-checkbox">
+              <input type="checkbox" id="cb11"><label for="cb11">Телевизор</label>
+            </div>
+            <div class="rooms__search-form-additionally-form-checkbox">
+              <input type="checkbox" id="cb12"><label for="cb12">Шампунь</label>
+            </div>
+       </form>
+      </div>
+      </div>
+    
+  </aside>

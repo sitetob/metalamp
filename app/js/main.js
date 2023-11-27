@@ -4,7 +4,7 @@ $(function () {
         css: [
             "./css/picker.css"
         ],
-        zIndex: 12,
+        zIndex: 21,
         lang: "ru-RU",
         format: "DD.MM.YYYY",    
         autoApply: false,
