@@ -357,6 +357,16 @@
         right: 15px;
         &:hover{opacity: .8;}
     }
+    &__search-form-price{
+        margin-top: 30px;
+    }
+    &__search-form-price-text{
+        font-size: 12px;
+     }
+    &__search-form-slider{
+        margin: 23px 0 10px 0;
+        
+    }
 }
 
 

@@ -47,5 +47,5 @@ $(function () {
                 targetItem.removeClass('empty');
         }
     };
-    
+
     })

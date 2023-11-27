@@ -1,0 +1,19 @@
+.theme-circle{--height: 6px;--panel-bg: #fff;--panel-border:1px solid rgba(31, 32, 65, 0.25);
+    --panel-bg-hover: rgba(31, 32, 65, 0.05);--panel-bg-fill: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    --pointer-width: 12px;--pointer-height: 12px;--pointer-bg:linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    --pointer-bg-hover: linear-gradient(180deg, #6FCF97 0%, #66D2EA 90%);
+    --pointer-bg-focus: #6FCF97;--pointer-shadow: none;--pointer-shadow-hover: 0px 1px 0px rgb(0, 0, 0, .5);
+    --pointer-shadow-focus: 0px 4px 6px rgb(0, 0, 0, .5);--pointer-border: 2px solid #fff;
+    --pointer-border-hover: 3px solid #fff;--pointer-border-focus: 3px solid #fff;
+    }
+.range-slider{
+    border-radius: 3px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+}
+.value1-label:after{
+      content:'\20BD \00a0-\00a0';
+}
+.value2-label::after{
+    content:'\20BD';
+}
+
