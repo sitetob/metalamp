@@ -4,7 +4,7 @@ $(function () {
         css: [
             "./css/picker.css"
         ],
-        zIndex: 3,
+        zIndex: 12,
         lang: "ru-RU",
         format: "DD.MM.YYYY",    
         autoApply: false,
@@ -25,6 +25,7 @@ $(function () {
     
  $(document).ready(() => {
         var elem = $('.iqdropdown');
+        var elem_two = $('.conveniences');
         elem.iqDropdown({
             onChange: (id, count, totalItems) => {
                 console.log('On change count', id, count, totalItems);
@@ -36,8 +37,8 @@ $(function () {
             .find('.iqdropdown-menu-option')
             .each((idx, el) => {
                 updateEmptyClass($(el), parseInt($(el).find('.counter').text()))
-            });
-    });
+            });    
+     });
 
     function updateEmptyClass(targetItem, count) {
         if (count === 0 ^ targetItem.hasClass('empty')) {
@@ -47,5 +48,18 @@ $(function () {
                 targetItem.removeClass('empty');
         }
     };
+    var clickToHide = document.querySelector('#click-to-hide');    
+    const newcard = document.querySelector('.rooms__search-form-additionally-more');
+	clickToHide.addEventListener("click", hideVisibleElem);
+	function hideVisibleElem() {
+	let wpcraftBox2 = document.querySelector('.rooms__search-form-additionally-form');
+	wpcraftBox2.classList.toggle("hide-element");	
+    if (wpcraftBox2.classList.contains("hide-element")){	        
+        newcard.setAttribute('src', './images/svg/expand_up.svg');
+	}   else {
+		newcard.setAttribute('src', './images/svg/expand_more.svg');
+	}
+	
+}
 
     })
