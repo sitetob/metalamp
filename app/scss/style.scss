@@ -334,7 +334,11 @@
         justify-content: space-between;
         align-items: flex-start;
     }
-    &__items h1 {text-align: left;width: 100%;}
+    &__items {
+        display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 20px 13px;
+          }
     &__search-form input{
         margin-bottom: 20px;
         border-radius: 4px;
@@ -468,14 +472,92 @@
         display: flex;
         width: 12px;
         height: 8px;
-        margin: 2px 16px 0 0;
+        margin: 2px 16px 0 0;        
+    }
+    &__title {
+        margin-bottom: 20px;
+        grid-column: span 6;
+    }
+    &__item{
+        max-width: 270px;
+        background-color: #fff;
+        box-shadow: 0px 10px 20px $darkshade5;
+        position: relative;
+        grid-column: span 2;
+    }
+    &__item-box-top,
+    &__item-box-footer{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    &__item-box-top{align-items: baseline;margin-top: 20px;margin-bottom: 10px;}
+    &__item-box-footer{
+        padding-bottom: 19px;
+        &::before{
+          content: '';  
+          position: absolute;
+          width: 80%;
+          height: 1px;
+          background: rgba(31, 32, 65, 0.10);         
+        }
+    }
+    &__item-img{
+        width: 100%;
+    }
+    &__item-img-slider{border-radius: 5px 5px 0 0;}
+    
+    &__item-num{
+        color: $darkshade100;
+        font-size: 19px;
+        font-weight: 700;
+        line-height: normal;
+        & span{font-size: 14px;}
+    }
+    &__item-class{
+        color: $purple;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-right: 6px;
+    }
+    &__item-price{
+        color: $darkshade50;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 18px; 
+    }
+    &__item-reviews{
+        color: $darkshade50;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 18px;
+        margin-top: 11px;
     }
 }
 .hide-element{
     display: none !important;
     
 }
-
+.rooms__item-slider{
+    &__arrow{
+       padding: 0;
+       border: none;
+       background: transparent;
+       position: absolute;
+       top: 50%;
+       transform: translateY(-50%);
+       z-index: 10;
+       cursor: pointer;
+    }
+    &__arrowleft{
+        left:16px;
+    }
+    &__arrowright{
+        right: 16px;
+    }
+}
 
 
 .aside{
@@ -486,3 +568,38 @@
     }
     
 }
+
+.rooms__item-rating {
+    text-align: center;
+    margin-top: 8px;
+    .rating-group {
+        display: inline-flex;
+    }
+    input {
+        position: absolute;
+        left: -9999px;
+    }
+    label {
+        margin: 0;
+        cursor: pointer;
+    }
+    label svg {
+        margin: 2px;
+        height: 19px;
+        width: 21px;
+        transition: fill 0.3s;
+    }
+    input:checked ~ label svg {
+        fill-opacity: 0;
+        stroke: $purple;
+    }
+    .rating-group:hover label svg {
+        stroke: $purple;
+        fill-opacity: .9;
+    }
+    .rating-group input:hover ~ label svg {
+        fill-opacity: 0;
+        stroke: $purple;
+    }
+}
+

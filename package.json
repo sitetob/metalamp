@@ -28,6 +28,8 @@
     "item-quantity-dropdown": "^2.1.0",
     "jquery": "^3.5.1",
     "sass": "^1.58.0",
+    "slick-carousel": "^1.8.1",
+    "slick-slider": "^1.8.2",
     "toolcool-range-slider": "^4.0.28"
   }
 }

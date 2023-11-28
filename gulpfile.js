@@ -46,6 +46,7 @@ function scripts() {
     'node_modules/item-quantity-dropdown/lib/item-quantity-dropdown.min.js',
     'node_modules/toolcool-range-slider/dist/plugins/tcrs-generated-labels.min.js',
     'node_modules/toolcool-range-slider/dist/toolcool-range-slider.min.js',
+    'node_modules/slick-carousel/slick/slick.js',
   ])
     .pipe(concat('main.min.js'))
     .pipe(uglify())
