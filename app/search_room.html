@@ -126,8 +126,8 @@
   </header>  
   <main class="main">
   <div class="container">
-    <section class="rooms search-room">
-      <div class="rooms__inner"><aside class="aside">          
+      <div class="rooms__inner">
+        <aside class="aside">          
     <form class="rooms__search-form">
       <div class="rooms__search-form-check">
         <h3 class="aside__block-title">даты пребывания в отеле</h3>  
@@ -265,6 +265,7 @@
       </div>
       </div>   
   </aside>
+  <section class="rooms search-room">
    <div class="rooms__items">
     <h1 class="rooms__title">Номера, которые мы для вас подобрали</h1>
     <div class="rooms__item">      
@@ -1499,8 +1500,35 @@
                         </div>
                         </div>
 </div>
-
-      </div>
+<div class="pagination">
+  <a class="pagination__arrow pagination__arrow--disabled" href="#!">
+    <img class="pagination__arrow-icon" src="images/svg/pag-prev.svg" alt="Icon">
+  </a>
+<ul class="pagination__list">
+  <li class="pagination__list-item">
+    <a class="pagination__list-num pagination__list-num--active" href="#!">1</a>
+  </li>
+  <li class="pagination__list-item">
+    <a class="pagination__list-num" href="#!">2</a>
+  </li>
+  <li class="pagination__list-item">
+    <a class="pagination__list-num" href="#!">3</a>
+  </li>
+  <li class="pagination__list-item">
+    <a class="pagination__list-num" href="#!">...</a>
+  </li>
+  <li class="pagination__list-item">
+    <a class="pagination__list-num" href="#!">15</a>
+  </li>
+</ul>
+<a class="pagination__arrow" href="#!">
+  <img class="pagination__arrow-icon" src="images/svg/pag-next.svg" alt="Icon">
+</a>
+</div>
+<div class="pagination__text">
+  <p>1 – 12 из 100+ вариантов аренды</p>
+  </div>
+      </div> 
     </section>
   </div>
 </main>
