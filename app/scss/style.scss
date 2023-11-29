@@ -484,13 +484,14 @@
         box-shadow: 0px 10px 20px $darkshade5;
         position: relative;
         grid-column: span 2;
+        border-radius: 5px;
     }
     &__item-box-top,
     &__item-box-footer{
         display: flex;
-        justify-content: space-between;
-        margin-left: 20px;
-        margin-right: 20px;
+        justify-content: space-around;
+        margin-left: 10px;
+        margin-right: 10px;
     }
     &__item-box-top{align-items: baseline;margin-top: 20px;margin-bottom: 10px;}
     &__item-box-footer{
@@ -498,9 +499,9 @@
         &::before{
           content: '';  
           position: absolute;
-          width: 80%;
+          width: 85%;
           height: 1px;
-          background: rgba(31, 32, 65, 0.10);         
+          background: rgba(31, 32, 65, 0.10);      
         }
     }
     &__item-img{
@@ -514,6 +515,7 @@
         font-weight: 700;
         line-height: normal;
         & span{font-size: 14px;}
+        :hover{color: $purple;}
     }
     &__item-class{
         color: $purple;
