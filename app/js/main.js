@@ -68,4 +68,4 @@ $('.rooms__item-slider').slick({
     dotsClass: 'slick-dots',
         });
 
-    })
+ })
