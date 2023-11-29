@@ -2,37 +2,37 @@ include header.html
 .container
   .rooms__inner
     include sidebar.html
-     section.rooms.search-room
-    .rooms__items
-      h1.rooms__title Номера, которые мы для вас подобрали
-      include ./mixins/card.html
-      include ./mixins/card.html
-      include ./mixins/card.html
-      include ./mixins/card.html
-      include ./mixins/card.html
-      include ./mixins/card.html
-      include ./mixins/card.html
-      include ./mixins/card.html
-      include ./mixins/card.html
-      include ./mixins/card.html
-      include ./mixins/card.html
-      include ./mixins/card.html
-    .pagination
-      a.pagination__arrow.pagination__arrow--disabled(href='#!')
-        img.pagination__arrow-icon(src='images/svg/pag-prev.svg' alt='Icon')
-      ul.pagination__list
-        li.pagination__list-item
-          a.pagination__list-num.pagination__list-num--active(href='#!') 1
-        li.pagination__list-item
-          a.pagination__list-num(href='#!') 2
-        li.pagination__list-item
-          a.pagination__list-num(href='#!') 3
-        li.pagination__list-item
-          a.pagination__list-num(href='#!') ...
-        li.pagination__list-item
-          a.pagination__list-num(href='#!') 15
-      a.pagination__arrow(href='#!')
-        img.pagination__arrow-icon(src='images/svg/pag-next.svg' alt='Icon')
-    .pagination__text
-      p 1 – 12 из 100+ вариантов аренды
+    section.rooms.search-room
+      .rooms__items
+        h1.rooms__title Номера, которые мы для вас подобрали
+        include ./mixins/card.html
+        include ./mixins/card.html
+        include ./mixins/card.html
+        include ./mixins/card.html
+        include ./mixins/card.html
+        include ./mixins/card.html
+        include ./mixins/card.html
+        include ./mixins/card.html
+        include ./mixins/card.html
+        include ./mixins/card.html
+        include ./mixins/card.html
+        include ./mixins/card.html
+      .pagination
+          a.pagination__arrow.pagination__arrow--disabled(href='#!')
+            img.pagination__arrow-icon(src='images/svg/pag-prev.svg' alt='Icon')
+          ul.pagination__list
+            li.pagination__list-item
+              a.pagination__list-num.pagination__list-num--active(href='#!') 1
+            li.pagination__list-item
+              a.pagination__list-num(href='#!') 2
+            li.pagination__list-item
+              a.pagination__list-num(href='#!') 3
+            li.pagination__list-item
+              a.pagination__list-num(href='#!') ...
+            li.pagination__list-item
+              a.pagination__list-num(href='#!') 15
+          a.pagination__arrow(href='#!')
+            img.pagination__arrow-icon(src='images/svg/pag-next.svg' alt='Icon')
+      .pagination__text
+        p 1 – 12 из 100+ вариантов аренды  
 include footer.html
