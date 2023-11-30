@@ -681,6 +681,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr); 
         column-gap: 80px;
+        margin-bottom: 70px;
     }
     &__card{
         grid-row: span 3;
@@ -719,37 +720,87 @@
             background-color: rgba(31, 32, 65, .10);
         }
     }
+    &__impressions-title{
+        margin-bottom: 20px;
+    }
+    &__reviews-head{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    &__reviews-avatar img{
+        border-radius: 50%;
+        box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.10);
+        width: 48px;
+        height: 48px;
+        float: left;
+        margin-right: 10px;
+    }
+    &__reviews-author{
+        font-weight: 700;
+    }
+    &__reviews-like{
+        color:$darkshade25;
+        font-size: 10px;
+        position: relative;
+        padding: 6px 0 0 25px;
+        float: left;
+        &::after{
+            content: '';
+            position: absolute;
+            width: 39.721px;
+            height: 20px;
+            border-radius: 10px;
+            border: 1px solid $purple;
+            background: transparent;
+            top: 8px;
+            left: 4px;
+            z-index: -1;
+        }
+    }
+    &__cancel-title,
+    &__rules-title {margin-bottom: 20px;}
+    &__rules-item {
+        line-height: 24px;
+        margin-bottom: 10px;
+        list-style-image: url(../images/svg/li-marker.svg);
+    }
+    &__rules-lists li{padding-left: 5px;}
+    &__reviews-like-icon {
+        position: absolute;
+        top: 14px;
+        left: 10px;  
+    }
+    &__reviews-text{
+        margin-left: 55px;
+        margin-bottom: 23px;
+    }
 }
 .canvas {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    max-width: 121px;
-  }
-  
+    align-items: flex-end;
+    max-width: 320px;
+  }  
   .legend {
     max-width: 155px;
     margin-left: 30px;
+    line-height: 24px; 
   }  
-
   .caption-list {
     margin: 0;
     padding: 0;
     list-style: none;
-  }
-  
+  }  
   .caption-item {
     position: relative;  
-    margin: 10px 0;
     padding-left: 10px;
     cursor: pointer;
-  }
-  
+  }  
   .caption-item:hover {
-    opacity: 0.8;
-
-  }
-  
+    opacity: 0.8; }  
   .caption-item::before {
     content: "";    
     position: absolute;
@@ -771,49 +822,59 @@
   }  
   .caption-item:nth-child(4)::before {
     background: linear-gradient(180deg, #909090 0%, #3D4975 100%);
-  }      
+  }     
   .chart {
-    min-width: 121px;
+    min-width: 125px;
+  }  
+  .pie text {
+    text-anchor: middle;
+    dominant-baseline: central;
+    visibility: hidden;    
+    font-size: 4px;
+    font-weight: 700;
   }
-  
-  .unit {
+ 
+  .pie circle {
     fill: none;
-    stroke-width: 3;
+    stroke-width: 2; 
     cursor: pointer;
-    
-    animation-name: render;
-    animation-duration: 1.5s;
-    transition-property: all; 
-    transition-duration: 1.5s;
+    transition: all 1.5s; 
   }
-  
-  .unit:hover,
-  .hovered {
-    opacity: 0.8;
-    stroke-width: 4;
-  }
-  
-  .unit:nth-child(1) {   
-    background: conic-gradient(red, orange, yellow, green, blue); 
-    stroke: #86cfa3;
+  .pie circle:nth-of-type(1) {
+    stroke: hsl(43, 100%, 80.6%);
     stroke-dasharray: 50 100;
     stroke-dashoffset: -25;
   }
-  
-  .unit:nth-child(2) {
-    stroke: #a2c6e0;
-    stroke-dasharray: 25 100; 
-    stroke-dashoffset: 50;
+  .pie circle:nth-of-type(2) {
+    stroke: hsl(145, 50%, 62.4%);
+    stroke-dasharray: 24 100; 
+    stroke-dashoffset: 48;
   }
-  
-  .unit:nth-child(3) {
-    stroke: #ffc7ec;
-    stroke-dasharray: 25 100;
-
+  .pie circle:nth-of-type(3) {
+    stroke: hsl(259.4, 100%, 80.6%);
+    stroke-dasharray: 23 100;
+    stroke-dashoffset: -1;
   }
-  
-  .unit:nth-child(4) {
-    stroke: #f8faa0;
+  .pie circle:nth-of-type(4) {
+    stroke: hsl(0, 0%, 56.5%);
     stroke-dasharray: 0 100;
-  }  
+  }
 
+  .pie g:hover circle:not(:hover) {
+    opacity: .6;
+    stroke-width: 4; 
+  }
+  .pie circle:nth-of-type(1):hover ~ text:nth-of-type(1),
+  .pie circle:nth-of-type(2):hover ~ text:nth-of-type(2),
+  .pie circle:nth-of-type(3):hover ~ text:nth-of-type(3),
+  .pie circle:nth-of-type(4):hover ~ text:nth-of-type(4)  
+  { visibility: visible; }
+
+  
+.like-button,
+.like-button-2 {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+}

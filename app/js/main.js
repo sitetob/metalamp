@@ -66,6 +66,6 @@ $('.rooms__item-slider').slick({
     nextArrow: '<button type="button" class="rooms__item-slider__arrow rooms__item-slider__arrowright"><img src="images/svg/back.svg" alt="Next"></button>',
     dots: true,
     dotsClass: 'slick-dots',
-        });
-
+        });   
+        
  })
