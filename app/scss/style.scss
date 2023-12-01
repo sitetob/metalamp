@@ -683,9 +683,6 @@
         column-gap: 80px;
         margin-bottom: 70px;
     }
-    &__card{
-        grid-row: span 3;
-    }
     &__reviews{
         grid-column: span 2;
     }
@@ -877,4 +874,150 @@
     background: none;
     cursor: pointer;
     padding: 0;
+}
+.rooms{ 
+    &__card{
+        grid-row: span 3;
+        max-width: 380px;
+        height: 530px;     
+        border-radius: 4px;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        background: #FFF;
+        box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.20); 
+        padding: 40px 30px 30px 30px;
+        label{text-transform: uppercase;color:$darkshade100;font-size: 12px; font-weight: 700;}
+    }
+    &__card-top{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;       
+        align-items: baseline; 
+        width: 100%;
+    }
+    &__card-input-check,
+    &__card-input-exit{
+        position: relative;
+        width: 150px;
+    }
+    &__card-input-exit svg {
+        position: absolute;
+        top: 45px;
+        right: 15px;
+        &:hover{opacity: .8;}
+    }
+    &__card-input-check svg {
+        position: absolute;
+        top: 45px;
+        right: 15px;
+        &:hover{opacity: .8;}
+    }
+    &__card-middle input{
+        border-radius: 4px;
+        border: 1px solid $darkshade25;
+        background: #FFF;
+        padding: 11px 15px;
+        font-size: 14px;
+        line-height: 18px; 
+        font-weight: 400; 
+        width: 150px;
+        height: 44px;    
+    }
+    &__box-form-box-select{
+        margin-top: 20px;
+        width: 320px;
+    }
+    &__card-middle{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 20px 0;
+    }
+    &__card-class{
+        color: $purple;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-right: 30%;   
+    }
+}
+.room {    
+    & button {
+     border: 0;
+    }
+    &__card-text{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+    &__card-item{
+        width: 215px;
+    }
+    &__card-item-att img{
+        width: 20px;
+        float: left;
+    }
+    &__card-item-price{
+        width: 75px;
+        text-align: right;
+    }
+    &__card-total{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 100%;
+        margin: 20px auto;
+    }
+    &__box-form-submit{
+        width: 100%;
+        padding: 14px 18px;
+        border: none;
+        background: transparent;
+        position: relative;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        cursor: pointer;
+        &:hover svg {filter: brightness(1.2); }
+        svg {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            transition: 0.2s ease;
+          }
+    }
+    &__box-form-submit-text{
+        color:#fff;
+        z-index: 1;
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    &__box-form-submit-arrow{
+        position: absolute;
+        top: 9px;
+        right: 15px;
+        color: #fff;    
+        font-size: 24px;
+        font-weight: 400;
+        line-height: normal;
+        z-index: 1;
+    }
+    &__card-total-title{
+        flex-shrink: 0;
+    }
+    &__card-total-text{
+        order: 1;
+        flex-shrink: 0;
+    }
+    &__card-total:after {
+        content: '';
+        border-bottom: 1px dashed $darkshade25; 
+        flex-grow: 1;
+      }
 }

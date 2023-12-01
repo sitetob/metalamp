@@ -188,7 +188,96 @@
       </div> 
     </div> 
     </div>
-  <div class="room__card"></div>
+  <div class="rooms__card">
+    <a class="rooms__card-head-link" href="#">  
+      <div class="rooms__card-top">         
+      <div class="rooms__item-num">
+       <p><span>№ </span>888</p> 
+      </div>
+      <div class="rooms__card-class">
+        <p>люкс</p> 
+      </div>
+      <div class="rooms__item-price">
+        <p>9 990₽ в сутки</p>
+      </div>
+    </div>
+    </a>
+  <form class="rooms__card-middle">
+    <div class="rooms__card-input-check">
+    <label>прибытие<br></label>   
+      <input class="home__box-form-checkin" name="date-checkin" id="checkin" type="text" value="ДД.ММ.ГГГГ">
+      <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10.5938 0.578125L12 1.98438L6 7.98438L0 1.98438L1.40625 0.578125L6 5.17188L10.5938 0.578125Z" fill="#1F2041" fill-opacity="0.5"/>
+      </svg>                    
+    </div>
+    <div class="rooms__card-input-exit">   
+    <label>выезд<br></label>
+      <input class="home__box-form-exit" name="date-exit" id="checkout" type="text" value="ДД.ММ.ГГГГ">   
+      <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10.5938 0.578125L12 1.98438L6 7.98438L0 1.98438L1.40625 0.578125L6 5.17188L10.5938 0.578125Z" fill="#1F2041" fill-opacity="0.5"/>
+      </svg>            
+    </div>
+    <div class="rooms__box-form-box-select">
+    <label>гости<br></label> 
+      <div class="iqdropdown">
+        <p class="iqdropdown-selection"></p>
+        <div class="iqdropdown-menu">
+          <div class="iqdropdown-menu-option" data-id="item1">
+            <div>
+              <p class="iqdropdown-item">Взрослые</p>
+            </div>
+          </div>
+          <div class="iqdropdown-menu-option" data-id="item2">
+            <div>
+              <p class="iqdropdown-item">Дети</p>
+            </div>
+          </div>
+          <div class="iqdropdown-menu-option" data-id="item3">
+            <div>
+              <p class="iqdropdown-item">Младенцы</p>
+            </div>
+          </div>
+          <div class="iqdropdown-menu-option-btn">
+            <div> <button type="submit">Очистить</button></div>
+            <div> <button type="submit" onclick="return false;">Применить</button></div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </form>  
+  <div class="room__card-text">
+    <p class="room__card-item">9 990₽ х 4 суток</p>
+    <p class="room__card-item-att"> </p>
+    <p class="room__card-item-price">39 960₽</p>
+  </div>
+  <div class="room__card-text">
+    <p class="room__card-item">Сбор за услуги: скидка 2 179₽</p>
+    <p class="room__card-item-att"><img class="room__card-item-att" src="images/svg/card_att.svg" alt="!"></p>
+    <p class="room__card-item-price">0₽</p>
+  </div>
+  <div class="room__card-text">
+    <p class="room__card-item">Сбор за дополнительные услуги</p>
+    <p class="room__card-item-att"><img class="room__card-item-att" src="images/svg/card_att.svg" alt="!"></p>
+    <p class="room__card-item-price">300₽</p>
+  </div>
+  <div class="room__card-total">
+    <h2 class="room__card-total-title">Итого</h2>
+    <h2 class="room__card-total-text">38 081₽</h2>
+  </div>
+  <button class="room__box-form-submit" type="submit">
+    <svg xmlns="http://www.w3.org/2000/svg" width="320" height="44" viewBox="0 0 320 44" fill="none">
+      <path d="M0 22C0 9.84974 9.84974 0 22 0H298C310.15 0 320 9.84974 320 22C320 34.1503 310.15 44 298 44H22C9.84974 44 0 34.1503 0 22Z" fill="url(#paint0_linear_18373_5)"/>
+      <defs>
+      <linearGradient id="paint0_linear_18373_5" x1="160" y1="0" x2="160" y2="44" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#BC9CFF"/>
+      <stop offset="1" stop-color="#8BA4F9"/>
+      </linearGradient>
+      </defs>
+      </svg>
+      <a class="room__box-form-submit-text" href="#!">забронировать</a>
+      <span class="room__box-form-submit-arrow">&#8594;</span>
+  </button>  
+  </div>
   <div class="room__reviews">
     <div class="room__reviews-head">
     <h2 class="room__reviews-title">Отзывы посетителей номера</h2>
