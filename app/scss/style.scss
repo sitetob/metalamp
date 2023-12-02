@@ -1084,7 +1084,7 @@
         background: url(../images/svg/reg_radio_none.svg) 0 0 no-repeat;
     }
     &__form-gender label:hover:before {
-        filter: brightness(120%);
+        filter: brightness(110%);
     }    
     &__form-gender input[type=radio]:disabled + label:before {
         filter: grayscale(100%);
@@ -1199,3 +1199,27 @@
   .toggle-label {
     position: relative;
   }
+.sign{
+    &__box{
+        max-width: 100%;
+        height: auto;
+        background-image: url(../images/sign_main.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        padding: 172px 0; 
+}
+    &__inner{
+        width: 380px;
+        padding: 40px 30px 32px 30px;
+        background-color: white;
+        border-radius: 4px;
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, .20);
+        border: 1px solid rgba(0, 0, 0, .12);
+        margin: 0 auto;
+}
+    &__form-link {
+        text-decoration: none;
+        color: #000;
+    }
+}
