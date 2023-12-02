@@ -680,7 +680,7 @@
     &__box{
         display: grid;
         grid-template-columns: repeat(3, 1fr); 
-        column-gap: 80px;
+        column-gap: 70px;
         margin-bottom: 70px;
     }
     &__reviews{
@@ -1021,3 +1021,181 @@
         flex-grow: 1;
       }
 }
+.reg{
+    &__box{
+            max-width: 100%;
+            height: auto;
+            background-image: url(../images/reg_main.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 19px 0;        
+    }
+    &__inner{
+            display: flex;
+            width: 380px;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            padding: 40px 30px 12px 30px;
+            background-color: white;
+            border-radius: 4px;
+            box-shadow: 0px 0px 25px rgba(0, 0, 0, .20);
+            border: 1px solid rgba(0, 0, 0, .12);
+            margin: 0 auto;
+    }
+    &__form input{
+        border: 1px solid $darkshade25;
+        border-radius: 4px;
+        width: 100%;
+        padding: 13px 15px;
+        margin-bottom: 10px;
+        color: $darkshade25;        
+        &::placeholder {
+            color: $darkshade25;
+            line-height: 18px;
+        }    
+    }
+    &__title{
+        margin-bottom: 20px;
+    }
+    &__form-date{
+        text-transform: uppercase;
+    }
+    &__form-gender input[type=radio]{
+        display: none;
+    }
+    &__form-gender label {
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        padding-left: 30px;
+        margin-right: 20px;
+        line-height: 24px;
+        user-select: none;
+    }
+    &__form-gender label:before {
+        content: '';
+        display: inline-block;
+        width: 20px;
+        height: 21px;
+        position: absolute;
+        left: 0;
+        bottom: 1px;
+        background: url(../images/svg/reg_radio_none.svg) 0 0 no-repeat;
+    }
+    &__form-gender label:hover:before {
+        filter: brightness(120%);
+    }    
+    &__form-gender input[type=radio]:disabled + label:before {
+        filter: grayscale(100%);
+    }    
+    &__form-gender input[type=radio]:checked + label:before {
+        background: url(../images/svg/reg_radio_check.svg) 0 0 no-repeat;
+    }
+    &__form-date-box{
+        margin-top: 23px;
+        margin-bottom: 5px;
+     }
+     &__form-ent-box{
+        margin-top: 10px;
+        margin-bottom: 5px;
+         }
+    &__form-submit{
+        border: none;
+        width: 100%;
+        padding: 14px 20px;
+        background: transparent;
+        position: relative;
+        margin-top: 20px;
+        margin-bottom: 12px;
+        text-align: center;
+        cursor: pointer;
+        &:hover svg {filter: brightness(1.2); }
+        svg {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            transition: 0.2s ease;
+          }
+    }
+    &__box-form-submit-text{
+        position: relative;
+        color:#fff;
+        z-index: 1;
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    &__box-form-submit-arrow{
+        position: absolute;
+        top: 9px;
+        right: 15px;
+        color: #fff;    
+        font-size: 24px;
+        font-weight: 400;
+        line-height: normal;
+        z-index: 1;
+    }
+    &__form-checkbox{
+        width: 100%;
+    }   
+
+    &__form-footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    } 
+    
+}
+.toggle {
+    cursor: pointer;
+    display: inline-block;
+  }  
+.toggle-switch {
+    display: inline-block;
+    width: 40px;
+    height: 20px;            
+    border-radius: 10px;
+    border: 1px solid $darkshade25;
+    background: #FFF;            
+    margin-right: 10px;
+    position: relative;
+    vertical-align: middle;
+    transition: background 0.25s;
+  }
+.toggle-switch:before, .toggle-switch:after {
+    content: '';
+  }
+.toggle-switch:before {
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    border-radius: 10px;
+    background: $darkshade25;
+    transition: 0.3s;
+  }
+  .toggle:hover .toggle-switch:before {
+    box-shadow: 0 0 0 1px $purple;
+  }
+  .toggle-checkbox:checked + .toggle-switch {
+    border: 1px solid $purple;
+  }
+  .toggle-checkbox:checked + .toggle-switch:before {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+    background: $purple;
+  }  
+  .toggle-checkbox {
+    position: absolute;
+    visibility: hidden;
+  }  
+  .toggle-label {
+    position: relative;
+  }

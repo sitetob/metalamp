@@ -54,3 +54,6 @@ h3{
   margin: 0 auto;
   padding: 0 140px;
 }
+input[type="date"]::-webkit-calendar-picker-indicator {
+	opacity: 0;
+	}
