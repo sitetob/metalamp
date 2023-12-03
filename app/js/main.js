@@ -1,4 +1,8 @@
 $(function () {
+    $('.header__btn-menu').on('click',function(){
+        $('.menu').toggleClass('menu--open');
+    });
+    
     const picker = new easepick.create({
         element: document.getElementById('checkin'),
         css: [

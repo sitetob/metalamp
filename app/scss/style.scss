@@ -16,17 +16,14 @@
         height: 70px;
     }
     &__inner-btn{
-        display: flex;        
+        display: flex;            
     }
     &__btn-enter,
     &__btn-reg{
-        margin: 18px 0px;
         border: none;
         background: transparent;
         position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        display: inline-flex;
         text-align: center;
         font-weight: 700;
         cursor: pointer;
@@ -44,6 +41,9 @@
     &__btn-reg{
         margin-left: 20px;
     }
+    &__btn-menu{
+        display: none;
+    }
 
 }
 .logo{
@@ -53,7 +53,7 @@
 .menu{
     &__list{
         display: flex;
-        flex-wrap: wrap;        
+        align-items: center;               
     }
     &__list-item{
        margin: 26px 0px;
@@ -1223,3 +1223,4 @@
         color: #000;
     }
 }
+@import 'media';
