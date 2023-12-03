@@ -53,11 +53,17 @@
     .container{
         padding: 0px 100px;
     }
+    .home__box-text{
+        right: 100px;
+    }
 }
 
 @media (max-width:1040px) {
     .container{
         padding: 0px 40px;
+    }
+    .home__box-text{
+        right: 40px;
     }
     .footer{
     &__widgets{
@@ -79,6 +85,12 @@
     .container{
         padding: 0px 20px;
     }
+    .home__box-text{
+        right: 20px;
+    }
+    .home__box-form{
+        margin: 0 auto;
+    }
 }
 
 @media (max-width:540px){
@@ -98,6 +110,18 @@
         &__widgets-logo{margin-bottom: 20px;}
         &__widgets-subscription{margin-top: 20px;}
         }
+    .home__box-form-input-check, .home__box-form-input-exit{
+        width: 100%;
+    }
+    .home__box-form input{
+        width: 100%;
+    }
+    .home__box-text{
+        bottom: 10px;
+    }    
+    .home__box-form-title{
+        font-size: 20px;
+    }
 }
 
 @media (max-width:375px) {
