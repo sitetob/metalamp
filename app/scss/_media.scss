@@ -178,6 +178,9 @@
         margin-right: 0px;
         width: 100%;
     }
+    .sign__box{
+        padding: 50px 0;
+    }
 }
 
 @media (max-width:540px){
@@ -223,7 +226,7 @@
     .room__box-form-submit-arrow {
         right: 35px;
     }
-    .room__card-text{font-size: .8em;}
+    .room__card-text{font-size: .9em;}
     .rooms__card-input-check, .rooms__card-input-exit{
         width: 100%;
     }
