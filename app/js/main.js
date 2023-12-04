@@ -5,8 +5,22 @@ $(function () {
             $('.menu--open').removeClass('menu--open');
           });     
     });
-    
-
+    const likeButton = document.querySelector('.like-button');
+    const likeCount = document.querySelector('.like-count'); 
+    const fillButton = document.querySelector('.room__reviews-like-icon');
+    likeButton.addEventListener('click', () => {
+    fillButton.style.fill = '#BC9CFF';
+    const currentCount = parseInt(likeCount.textContent, 10);
+    likeCount.textContent = currentCount + 1;
+    });
+    const likeButton_two = document.querySelector('.like-button-2');
+    const likeCount_two = document.querySelector('.like-count-2'); 
+    const fillButton_two = document.querySelector('.room__reviews-like-icon-2');
+    likeButton_two.addEventListener('click', () => {
+    fillButton_two.style.fill = '#BC9CFF';
+    const currentCount = parseInt(likeCount_two.textContent, 10);
+    likeCount_two.textContent = currentCount + 1;
+    });
 
     const picker = new easepick.create({
         element: document.getElementById('checkin'),
@@ -75,6 +89,5 @@ $('.rooms__item-slider').slick({
     nextArrow: '<button type="button" class="rooms__item-slider__arrow rooms__item-slider__arrowright"><img src="images/svg/back.svg" alt="Next"></button>',
     dots: true,
     dotsClass: 'slick-dots',
-        });   
-        
+        });           
  })

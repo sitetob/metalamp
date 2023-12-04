@@ -1,0 +1,143 @@
+include header.html
+.gallery__box
+  figure.gallery__box-item
+    img.gallery__box-item-img(src='images/details_1.jpg' alt='Image')
+  figure.gallery__box-item
+    img.gallery__box-item-img(src='images/details_2.jpg' alt='Image')
+  figure.gallery__box-item
+    img.gallery__box-item-img(src='images/details_3.jpg' alt='Image')
+.container
+  .room__box
+    .room__about
+      h2.room__about-title &Scy;&vcy;&iecy;&dcy;&iecy;&ncy;&icy;&yacy; &ocy; &ncy;&ocy;&mcy;&iecy;&rcy;&iecy;
+      img.room__about-icon(src='images/svg/insert_emoticon.svg' alt='Icon')
+      p.room__about-text-bold &Kcy;&ocy;&mcy;&fcy;&ocy;&rcy;&tcy;
+      p.room__about-text &SHcy;&ucy;&mcy;&ocy;&pcy;&ocy;&gcy;&lcy;&ocy;&shchcy;&acy;&yucy;&shchcy;&icy;&iecy; &scy;&tcy;&iecy;&ncy;&ycy;
+      .room__line
+        img.room__about-icon(src='images/svg/location_city.svg' alt='Icon')
+        p.room__about-text-bold &Ucy;&dcy;&ocy;&bcy;&scy;&tcy;&vcy;&ocy;
+        p.room__about-text &Ocy;&kcy;&ncy;&ocy; &vcy; &kcy;&acy;&zhcy;&dcy;&ocy;&jcy; &icy;&zcy; &scy;&pcy;&acy;&lcy;&iecy;&ncy;
+      .room__line
+        img.room__about-icon(src='images/svg/whatshot.svg' alt='Icon')
+        p.room__about-text-bold &Ucy;&yucy;&tcy;
+        p.room__about-text &Ncy;&ocy;&mcy;&iecy;&rcy; &ocy;&scy;&ncy;&acy;&shchcy;&iocy;&ncy; &kcy;&acy;&mcy;&icy;&ncy;&ocy;&mcy;
+    .room__impressions
+      h2.room__impressions-title &Vcy;&pcy;&iecy;&chcy;&acy;&tcy;&lcy;&iecy;&ncy;&icy;&yacy; &ocy;&tcy; &ncy;&ocy;&mcy;&iecy;&rcy;&acy;
+      .canvas
+        svg.pie(width='125' viewbox='0 0 40 40')
+          g
+            circle(r='15.9155' cx='50%' cy='50%')
+            circle(r='15.9155' cx='50%' cy='50%')
+            circle(r='15.9155' cx='50%' cy='50%')
+            circle(r='15.9155' cx='50%' cy='50%')
+            text.circle_text(x='50%' y='50%' fill='#FFE39C')
+              tspan(x='50%' dy='-.4em') 520
+              tspan(x='50%' dy='1em') &gcy;&ocy;&lcy;&ocy;&scy;&ocy;&vcy;
+            text(x='50%' y='50%' fill='#6FCF97')
+              tspan(x='50%' dy='-.4em') 260
+              tspan(x='50%' dy='1em') &gcy;&ocy;&lcy;&ocy;&scy;&ocy;&vcy;
+            text(x='50%' y='50%' fill='#BC9CFF')
+              tspan(x='50%' dy='-.4em') 260
+              tspan(x='50%' dy='1em') &gcy;&ocy;&lcy;&ocy;&scy;&ocy;&vcy;
+            text(x='50%' y='50%')
+              tspan(x='50%' dy='-.4em') 0
+              tspan(x='50%' dy='1em') &gcy;&ocy;&lcy;&ocy;&scy;&ocy;&vcy;
+        .legend
+          ul.caption-list
+            li.caption-item &Vcy;&iecy;&lcy;&icy;&kcy;&ocy;&lcy;&iecy;&pcy;&ncy;&ocy;
+            li.caption-item &KHcy;&ocy;&rcy;&ocy;&shcy;&ocy;
+            li.caption-item &Ucy;&dcy;&ocy;&vcy;&lcy;&iecy;&tcy;&vcy;&ocy;&rcy;&icy;&tcy;&iecy;&lcy;&softcy;&ncy;&ocy;
+            li.caption-item &Rcy;&acy;&zcy;&ocy;&chcy;&acy;&rcy;&ocy;&vcy;&acy;&ncy;
+    .rooms__card
+      a.rooms__card-head-link(href='#')
+        .rooms__card-top
+          .rooms__item-num
+            p
+              span &numero; 
+              | 888
+          .rooms__card-class
+            p &lcy;&yucy;&kcy;&scy;
+          .rooms__item-price
+            p 9 990&#x20BD; &vcy; &scy;&ucy;&tcy;&kcy;&icy;
+      include ./details_room/form.html
+      .room__card-text
+        p.room__card-item 9 990&#x20BD; &khcy; 4 &scy;&ucy;&tcy;&ocy;&kcy;
+        p.room__card-item-att  
+        p.room__card-item-price 39 960&#x20BD;
+      .room__card-text
+        p.room__card-item &Scy;&bcy;&ocy;&rcy; &zcy;&acy; &ucy;&scy;&lcy;&ucy;&gcy;&icy;: &scy;&kcy;&icy;&dcy;&kcy;&acy; 2 179&#x20BD;
+        p.room__card-item-att
+          img.room__card-item-att(src='images/svg/card_att.svg' alt='!')
+        p.room__card-item-price 0&#x20BD;
+      .room__card-text
+        p.room__card-item &Scy;&bcy;&ocy;&rcy; &zcy;&acy; &dcy;&ocy;&pcy;&ocy;&lcy;&ncy;&icy;&tcy;&iecy;&lcy;&softcy;&ncy;&ycy;&iecy; &ucy;&scy;&lcy;&ucy;&gcy;&icy;
+        p.room__card-item-att
+          img.room__card-item-att(src='images/svg/card_att.svg' alt='!')
+        p.room__card-item-price 300&#x20BD;
+      .room__card-total
+        h2.room__card-total-title &Icy;&tcy;&ocy;&gcy;&ocy;
+        h2.room__card-total-text 38 081&#x20BD;
+      button.room__box-form-submit(type='submit')
+        svg(xmlns='http://www.w3.org/2000/svg' width='320' height='44' viewbox='0 0 320 44' fill='none')
+          path(d='M0 22C0 9.84974 9.84974 0 22 0H298C310.15 0 320 9.84974 320 22C320 34.1503 310.15 44 298 44H22C9.84974 44 0 34.1503 0 22Z' fill='url(#paint0_linear_18373_5)')
+          defs
+            lineargradient#paint0_linear_18373_5(x1='160' y1='0' x2='160' y2='44' gradientunits='userSpaceOnUse')
+              stop(stop-color='#BC9CFF')
+              stop(offset='1' stop-color='#8BA4F9')
+        a.room__box-form-submit-text(href='#!') &zcy;&acy;&bcy;&rcy;&ocy;&ncy;&icy;&rcy;&ocy;&vcy;&acy;&tcy;&softcy;
+        span.room__box-form-submit-arrow &rarr;
+    .room__reviews
+      .room__reviews-head
+        h2.room__reviews-title &Ocy;&tcy;&zcy;&ycy;&vcy;&ycy; &pcy;&ocy;&scy;&iecy;&tcy;&icy;&tcy;&iecy;&lcy;&iecy;&jcy; &ncy;&ocy;&mcy;&iecy;&rcy;&acy;
+        p.room__reviews-col 2 &ocy;&tcy;&zcy;&ycy;&vcy;&acy;
+      .room__reviews-middle
+        .room__reviews-avatar
+          img(src='images/ava1.jpg' alt='Avatar')
+        p.room__reviews-author &Mcy;&ucy;&rcy;&acy;&dcy; &Scy;&acy;&rcy;&acy;&fcy;&acy;&ncy;&ocy;&vcy;
+        p.room__reviews-date 5 &dcy;&ncy;&iecy;&jcy; &ncy;&acy;&zcy;&acy;&dcy;
+      .room__reviews-like
+        button.like-button
+          svg.room__reviews-like-icon(width='10' height='8' viewbox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg')
+            path#svgfill(d='M4.90237 7.88672L4.2969 7.33984C3.6068 6.71484 3.1055 6.2526 2.793 5.95312C2.4805 5.65365 2.12893 5.28255 1.73831 4.83984C1.3607 4.39714 1.10029 4 0.957059 3.64844C0.81383 3.28385 0.742215 2.91276 0.742215 2.53516C0.742215 1.89714 0.957059 1.35677 1.38675 0.914062C1.82945 0.471354 2.37633 0.25 3.02737 0.25C3.78258 0.25 4.40758 0.542969 4.90237 1.12891C5.39716 0.542969 6.02216 0.25 6.77737 0.25C7.42841 0.25 7.96878 0.471354 8.39847 0.914062C8.84117 1.35677 9.06253 1.89714 9.06253 2.53516C9.06253 3.04297 8.89326 3.57031 8.55472 4.11719C8.21617 4.66406 7.84508 5.13932 7.44143 5.54297C7.05081 5.94661 6.40628 6.55208 5.50784 7.35938L4.90237 7.88672Z' stroke='#BC9CFF' stroke-width='0.3')
+            defs
+              lineargradient#paint0_linear_18384_118(x1='4.90237' y1='-6' x2='4.90237' y2='14' gradientunits='userSpaceOnUse')
+                stop(stop-color='#BC9CFF')
+                stop(offset='1' stop-color='#8BA4F9')
+        span.like-count 12
+      .room__reviews-text
+        p
+          | &Vcy;&iecy;&lcy;&icy;&kcy;&ocy;&lcy;&iecy;&pcy;&ncy;&ycy;&jcy; &mcy;&acy;&tcy;&rcy;&acy;&scy; &ncy;&acy; &kcy;&rcy;&ocy;&vcy;&acy;&tcy;&icy; &vcy; &ocy;&scy;&ncy;&ocy;&vcy;&ncy;&ocy;&jcy; &scy;&pcy;&acy;&lcy;&softcy;&ncy;&iecy;! &Acy; &pcy;&ucy;&fcy;&icy;&kcy; &vcy;&ocy;&ocy;&bcy;&shchcy;&iecy; &pcy;&ocy;&tcy;&rcy;&yacy;&scy;&acy;&yucy;&shchcy;&icy;&jcy;. &Icy; &scy;&tcy;&iecy;&ncy;&ycy;, &dcy;&iecy;&jcy;&scy;&tcy;&vcy;&icy;&tcy;&iecy;&lcy;&softcy;&ncy;&ocy;, &shcy;&ucy;&mcy;&ocy;&pcy;&ocy;&dcy;&acy;&vcy;&lcy;&yacy;&yucy;&shchcy;&icy;&iecy;. &Vcy;&ycy;&kcy;&rcy;&icy;&kcy;&icy;&vcy;&acy;&lcy; &kcy;&ocy;&mcy;&pcy;&lcy;&icy;&mcy;&iecy;&ncy;&tcy;&ycy; &pcy;&ocy;&vcy;&acy;&rcy;&ucy; &mdash; &ncy;&icy;&kcy;&tcy;&ocy; &ncy;&iecy; &zhcy;&acy;&lcy;&ocy;&vcy;&acy;&lcy;&scy;&yacy; &icy;&zcy; &scy;&ocy;&scy;&iecy;&dcy;&iecy;&jcy;.
+      .room__reviews-middle
+        .room__reviews-avatar
+          img(src='images/ava2.jpg' alt='Avatar')
+        p.room__reviews-author &Pcy;&acy;&tcy;&rcy;&icy;&scy;&icy;&yacy; &Scy;&tcy;&iocy;&kcy;&lcy;&ycy;&shcy;&kcy;&ocy;&vcy;&acy;
+        p.room__reviews-date &Ncy;&iecy;&dcy;&iecy;&lcy;&yucy; &ncy;&acy;&zcy;&acy;&dcy;
+      .room__reviews-like
+        button.like-button-2
+          svg.room__reviews-like-icon(width='10' height='8' viewbox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg')
+            path#svgfill-2(d='M4.90237 7.88672L4.2969 7.33984C3.6068 6.71484 3.1055 6.2526 2.793 5.95312C2.4805 5.65365 2.12893 5.28255 1.73831 4.83984C1.3607 4.39714 1.10029 4 0.957059 3.64844C0.81383 3.28385 0.742215 2.91276 0.742215 2.53516C0.742215 1.89714 0.957059 1.35677 1.38675 0.914062C1.82945 0.471354 2.37633 0.25 3.02737 0.25C3.78258 0.25 4.40758 0.542969 4.90237 1.12891C5.39716 0.542969 6.02216 0.25 6.77737 0.25C7.42841 0.25 7.96878 0.471354 8.39847 0.914062C8.84117 1.35677 9.06253 1.89714 9.06253 2.53516C9.06253 3.04297 8.89326 3.57031 8.55472 4.11719C8.21617 4.66406 7.84508 5.13932 7.44143 5.54297C7.05081 5.94661 6.40628 6.55208 5.50784 7.35938L4.90237 7.88672Z' stroke='#BC9CFF' stroke-width='0.3')
+            defs
+              lineargradient#paint0_linear_18384_118(x1='4.90237' y1='-6' x2='4.90237' y2='14' gradientunits='userSpaceOnUse')
+                stop(stop-color='#BC9CFF')
+                stop(offset='1' stop-color='#8BA4F9')
+        span.like-count-2 2
+      .room__reviews-text
+        p
+          | &Ocy;&bcy;&scy;&lcy;&ucy;&zhcy;&icy;&vcy;&acy;&ncy;&icy;&iecy; &ncy;&acy; &vcy;&ycy;&scy;&ocy;&tcy;&iecy;! &Vcy;&scy;&iocy; &acy;&kcy;&kcy;&ucy;&rcy;&acy;&tcy;&ncy;&ocy;, &chcy;&icy;&scy;&tcy;&ocy;. &Zcy;&acy;&vcy;&tcy;&rcy;&acy;&kcy;&icy; &vcy; &ncy;&ocy;&mcy;&iecy;&rcy; &scy;&ocy;&vcy;&iecy;&tcy;&ucy;&yucy; &zcy;&acy;&kcy;&acy;&zcy;&acy;&tcy;&softcy;, &kcy;&acy;&zhcy;&dcy;&ycy;&jcy; &dcy;&iecy;&ncy;&softcy; &ncy;&ocy;&vcy;&ocy;&iecy; &bcy;&lcy;&yucy;&dcy;&ocy; &icy; &dcy;&iecy;&scy;&iecy;&rcy;&tcy; &kcy;&acy;&kcy; &kcy;&ocy;&mcy;&pcy;&lcy;&icy;&mcy;&iecy;&ncy;&tcy;
+    .room__rules
+      h2.room__rules-title &Pcy;&rcy;&acy;&vcy;&icy;&lcy;&acy;
+      ul.room__rules-lists
+        li.room__rules-item
+          | &Ncy;&iecy;&lcy;&softcy;&zcy;&yacy; &scy; &pcy;&icy;&tcy;&ocy;&mcy;&tscy;&acy;&mcy;&icy;
+        li.room__rules-item
+          | &Bcy;&iecy;&zcy; &vcy;&iecy;&chcy;&iecy;&rcy;&icy;&ncy;&ocy;&kcy; &icy; &mcy;&iecy;&rcy;&ocy;&pcy;&rcy;&icy;&yacy;&tcy;&icy;&jcy;
+        li.room__rules-item
+          | &Vcy;&rcy;&iecy;&mcy;&yacy; &pcy;&rcy;&icy;&bcy;&ycy;&tcy;&icy;&yacy; &mdash; &pcy;&ocy;&scy;&lcy;&iecy; 13:00,
+          br
+          | &acy; &vcy;&ycy;&iecy;&zcy;&dcy; &dcy;&ocy; 12:00
+    .room__cancel
+      h2.room__cancel-title &Ocy;&tcy;&mcy;&iecy;&ncy;&acy;
+      p
+        | &Bcy;&iecy;&scy;&pcy;&lcy;&acy;&tcy;&ncy;&acy;&yacy; &ocy;&tcy;&mcy;&iecy;&ncy;&acy; &vcy; &tcy;&iecy;&chcy;&iecy;&ncy;&icy;&iecy; 48 &chcy;. &Pcy;&ocy;&scy;&lcy;&iecy; &ecy;&tcy;&ocy;&gcy;&ocy; &pcy;&rcy;&icy; &ocy;&tcy;&mcy;&iecy;&ncy;&iecy; &ncy;&iecy; &pcy;&ocy;&zcy;&dcy;&ncy;&iecy;&iecy; &chcy;&iecy;&mcy; &zcy;&acy; 5 &dcy;&ncy;. &dcy;&ocy; &pcy;&rcy;&icy;&bcy;&ycy;&tcy;&icy;&yacy; &vcy;&ycy; &pcy;&ocy;&lcy;&ucy;&chcy;&icy;&tcy;&iecy; &pcy;&ocy;&lcy;&ncy;&ycy;&jcy; &vcy;&ocy;&zcy;&vcy;&rcy;&acy;&tcy; &zcy;&acy; &vcy;&ycy;&chcy;&iecy;&tcy;&ocy;&mcy; &scy;&bcy;&ocy;&rcy;&acy; &zcy;&acy; &ucy;&scy;&lcy;&ucy;&gcy;&icy;.
+
+include footer.html

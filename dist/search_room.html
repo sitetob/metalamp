@@ -1,0 +1,1602 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Room</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/images/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/images/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffc40d">
+  <meta name="msapplication-config" content="/images/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+  <div class="wrapper">
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__inner-logo">
+        <a href="#" class="logo">
+          <img src="images/svg/logo.svg" alt="Toxin Logo">
+        </a>
+        </div>
+      <div class="header__inner-btn">
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#!">О нас</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#!">Услуги
+              <img class="menu__list-more" src="images/svg/expand_more.svg" alt="More" >
+            </a>
+            <ul class="menu__list-submenu">
+              <li class="menu__list-submenu-li">
+                <a class="menu__list-submenu-link" href="#!">Услуги</a>
+              </li>
+              <li class="menu__list-submenu-li">
+                <a class="menu__list-submenu-link" href="#!">Услуги &#8594;</a>
+                        <ul class="menu__list-submenu">
+                          <li class="menu__list-submenu-li">
+                            <a class="menu__list-submenu-link" href="#!">Услуги</a>
+                          </li>
+                          <li class="menu__list-submenu-li">
+                            <a class="menu__list-submenu-link" href="#!">Услуги</a>
+                          </li>                          
+                        </ul>
+              </li>
+              <li class="menu__list-submenu-li">
+                <a class="menu__list-submenu-link" href="#!">Услуги</a>
+              </li>
+              <li class="menu__list-submenu-li">
+                <a class="menu__list-submenu-link" href="#!">Услуги</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#!">Вакансии</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#!">Новости</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#!">Соглашения
+            <img class="menu__list-more" src="images/svg/expand_more.svg" alt="More" >            
+            </a>
+            <ul class="menu__list-submenu">
+              <li class="menu__list-submenu-li">
+                <a class="menu__list-submenu-link" href="#!">Соглашения</a>
+              </li>
+              <li class="menu__list-submenu-li">
+                <a class="menu__list-submenu-link" href="#!">Соглашения</a>                        
+              </li>
+              <li class="menu__list-submenu-li">
+                <a class="menu__list-submenu-link" href="#!">Соглашения  &#8594;</a>
+                <ul class="menu__list-submenu">
+                  <li class="menu__list-submenu-li">
+                    <a class="menu__list-submenu-link" href="#!">Соглашения</a>
+                  </li>
+                  <li class="menu__list-submenu-li">
+                    <a class="menu__list-submenu-link" href="#!">Соглашения</a>
+                  </li>                          
+                </ul>
+              </li>
+              <li class="menu__list-submenu-li">
+                <a class="menu__list-submenu-link" href="#!">Соглашения</a>
+              </li>
+            </ul>
+          </li>  
+          <li class="menu__list-item">
+            <button class="header__btn-enter">
+              <svg xmlns="http://www.w3.org/2000/svg" width="87" height="34" viewBox="0 0 87 34" fill="none">
+                <path d="M1 17C1 8.16344 8.16344 1 17 1H70C78.8366 1 86 8.16344 86 17C86 25.8366 78.8366 33 70 33H17C8.16345 33 1 25.8366 1 17Z" stroke="url(#paint0_linear_18370_50)" stroke-width="2"/>
+                <defs>
+                  <linearGradient id="paint0_linear_18370_50" x1="43.5" y1="0" x2="43.5" y2="34" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#BC9CFF"/>
+                    <stop offset="1" stop-color="#8BA4F9"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+              <a class="menu__list-btn-enter" href="#!">Войти</a>
+            </button>
+          </li> 
+          <li class="menu__list-item">
+            <button class="header__btn-reg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="196" height="34" viewBox="0 0 196 34" fill="none">
+                <path d="M0 17C0 7.61116 7.61116 0 17 0H179C188.389 0 196 7.61116 196 17C196 26.3888 188.389 34 179 34H17C7.61116 34 0 26.3888 0 17Z" fill="url(#paint0_linear_18370_47)"/>
+                <defs>
+                  <linearGradient id="paint0_linear_18370_47" x1="98" y1="0" x2="98" y2="34" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#BC9CFF"/>
+                    <stop offset="1" stop-color="#8BA4F9"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+              <a class="menu__list-btn-reg" href="#!">Зарегистрироваться</a>
+            </button>
+          </li>     
+        </ul>
+      </nav>   
+        <button class="header__btn-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>      
+      </div>
+    </div>
+  </header>  
+  <main class="main">
+  <div class="container">
+      <div class="rooms__inner">
+        <aside class="aside">          
+    <form class="rooms__search-form">
+      <div class="rooms__search-form-check">
+        <h3 class="aside__block-title">даты пребывания в отеле</h3>  
+          <input class="rooms__search-form-checkin" value="ДД.ММ.ГГГГ - ДД.ММ.ГГГГ" name="" id="checkin" type="text">
+          <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.5938 0.578125L12 1.98438L6 7.98438L0 1.98438L1.40625 0.578125L6 5.17188L10.5938 0.578125Z" fill="#1F2041" fill-opacity="0.5"/>
+          </svg>                    
+      </div>
+      <div class="rooms__search-form-box-select">
+        <h3 class="aside__block-title">гости</h3>  
+          <div class="iqdropdown">
+            <p class="iqdropdown-selection"></p>
+            <div class="iqdropdown-menu">
+              <div class="iqdropdown-menu-option" data-id="item1">
+                <div>
+                  <p class="iqdropdown-item">Взрослые</p>
+                </div>
+              </div>
+              <div class="iqdropdown-menu-option" data-id="item2">
+                <div>
+                  <p class="iqdropdown-item">Дети</p>
+                </div>
+              </div>
+              <div class="iqdropdown-menu-option" data-id="item3">
+                <div>
+                  <p class="iqdropdown-item">Младенцы</p>
+                </div>
+              </div>
+              <div class="iqdropdown-menu-option-btn">
+                <div> <button type="submit">Очистить</button></div>
+                <div> <button type="submit" onclick="return false;">Применить</button></div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="rooms__search-form-price">
+        <h3 class="aside__block-title">диапазон цены</h3>
+        <div class="rooms__search-form-slider">
+            <tc-range-slider 
+            slider-width="100%"
+            min="0" 
+            max="15000" 
+            value1="5000"
+            value2="10000" 
+            step="1000"
+            css-links="css/tcrs-themes.min.css"
+            theme="circle"       
+            generate-labels="true">
+            </tc-range-slider>
+      </div>
+        <span class="rooms__search-form-price-text">Стоимость за сутки пребывания в номере</span>
+      </div>
+      <div class="rooms__search-form-rules">
+        <h3 class="aside__block-title">правила дома</h3>
+        <div class="rooms__search-form-rules-form">
+        <form class="rooms__search-form-rules-form">
+           <div class="rooms__search-form-rules-form-checkbox">
+            <input type="checkbox" id="cb1"><label for="cb1">Можно курить</label>
+          </div>                  
+            <div class="rooms__search-form-rules-form-checkbox">
+            <input type="checkbox" id="cb2"><label for="cb2">Можно с питомцами</label>
+            </div>                  
+            <div class="rooms__search-form-rules-form-checkbox">
+            <input type="checkbox" id="cb3"><label for="cb3">Можно пригласить гостей<br>(до 10 человек)</label>
+            </div>
+        </form>
+        </div>
+      </div>
+      <div class="rooms__search-form-availability">
+        <h3 class="aside__block-title">доступность</h3>
+        <div class="rooms__search-form-availability-form">
+        <form class="rooms__search-form-availability-form">
+          <div class="rooms__search-form-availability-form-checkbox">
+           <input type="checkbox" id="cb4"><label for="cb4">Широкий коридор</label>
+           <p class="rooms__search-form-availability-form-text">Ширина коридоров в номере<br>не менее 91 см.</p>
+         </div>                  
+           <div class="rooms__search-form-availability-form-checkbox">
+           <input type="checkbox" id="cb5"><label for="cb5">Помощник для инвалидов</label>
+           <p class="rooms__search-form-availability-form-text">На 1 этаже вас встретит специалист<br>и проводит до номера.</p>
+           </div>                  
+       </form>
+       </div>
+      </div>
+      <div class="rooms__search-form-conveniences">
+        <h3 class="aside__block-title">удобства номера</h3>
+        <div class="iqdropdown">
+          <p class="iqdropdown-selection" data-selection-text="услуга" data-text-plural="услуг"></p>
+          <div class="iqdropdown-menu">
+            <div class="iqdropdown-menu-option" data-id="item4">
+              <div>
+                <p class="iqdropdown-item">Спальни</p>
+              </div>
+            </div>
+            <div class="iqdropdown-menu-option" data-id="item5">
+              <div>
+                <p class="iqdropdown-item">Кровати</p>
+              </div>
+            </div>
+            <div class="iqdropdown-menu-option" data-id="item6">
+              <div>
+                <p class="iqdropdown-item">Ванные комнаты</p>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+      <div class="rooms__search-form-additionally">
+        <div class="rooms__search-form-additionally-box">
+        <h3 class="aside__block-title">дополнительные удобства</h3>
+        <a class="rooms__search-form-additionally-link" href="#" id="click-to-hide">
+          <img class="rooms__search-form-additionally-more" src="images/svg/expand_more.svg" alt="More">            
+        </a>
+        </div>
+      <div class="rooms__search-form-additionally-form hide-element">
+        <form class="rooms__search-form-additionally-form">
+          <div class="rooms__search-form-additionally-form-checkbox">
+           <input type="checkbox" id="cb7"><label for="cb7">Завтрак</label>
+         </div>                  
+           <div class="rooms__search-form-additionally-form-checkbox">
+           <input type="checkbox" id="cb8"><label for="cb8">Письменный стол</label>
+           </div>                  
+           <div class="rooms__search-form-additionally-form-checkbox">
+           <input type="checkbox" id="cb9"><label for="cb9">Стул для кормления</label>
+           </div>
+           <div class="rooms__search-form-additionally-form-checkbox">
+            <input type="checkbox" id="cb10"><label for="cb10">Кроватка</label>
+            </div>
+            <div class="rooms__search-form-additionally-form-checkbox">
+              <input type="checkbox" id="cb11"><label for="cb11">Телевизор</label>
+            </div>
+            <div class="rooms__search-form-additionally-form-checkbox">
+              <input type="checkbox" id="cb12"><label for="cb12">Шампунь</label>
+            </div>
+       </form>
+      </div>
+      </div>   
+  </aside>
+  <section class="rooms search-room">
+   <div class="rooms__items">
+    <h1 class="rooms__title">Номера, которые мы для вас подобрали</h1>
+    <div class="rooms__item">      
+      <div class="rooms__item-slider">
+        <div class="rooms__item-img">
+          <img class="rooms__item-img-slider" src="images/cards/card1.jpg" alt="Image">
+        </div>
+        <div class="rooms__item-img">
+          <img class="rooms__item-img-slider" src="images/cards/card1.jpg" alt="Image">
+        </div>
+        <div class="rooms__item-img">
+          <img class="rooms__item-img-slider" src="images/cards/card1.jpg" alt="Image">
+        </div>
+        <div class="rooms__item-img">
+          <img class="rooms__item-img-slider" src="images/cards/card1.jpg" alt="Image">
+        </div>
+      </div>   
+      <a class="rooms__item-box-link" href="#">  
+        <div class="rooms__item-box-top">         
+        <div class="rooms__item-num">
+         <p><span>№ </span>888</p> 
+        </div>
+        <div class="rooms__item-class">
+          <p>люкс</p> 
+        </div>
+        <div class="rooms__item-price">
+          <p>9 990₽ в сутки</p>
+        </div>
+      </div>
+      </a>
+      <div class="rooms__item-box-footer">
+        <div class="rooms__item-rating">
+          <div class="rating-group">
+              <!-- по умолчанию 0 -->
+              <input value="0" type="radio">            
+              <!-- рейтинг 1 -->    
+              <label for="fst-1">
+                <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                  <defs>
+                  <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#BC9CFF"/>
+                  <stop offset="1" stop-color="#8BA4F9"/>
+                  </linearGradient>
+                  </defs>
+                  </svg>                               
+              </label>
+              <input name="fst" id="fst-1" value="1" type="radio">            
+              <!-- рейтинг 2 -->    
+              <label for="fst-2">
+                <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                  <defs>
+                  <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#BC9CFF"/>
+                  <stop offset="1" stop-color="#8BA4F9"/>
+                  </linearGradient>
+                  </defs>
+                  </svg>                   
+              </label>
+              <input name="fst" id="fst-2" value="2" type="radio">            
+              <!-- рейтинг 3 -->    
+              <label for="fst-3">
+                <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                  <defs>
+                  <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#BC9CFF"/>
+                  <stop offset="1" stop-color="#8BA4F9"/>
+                  </linearGradient>
+                  </defs>
+                  </svg>                 
+              </label>
+              <input name="fst" id="fst-3" value="3" type="radio">            
+              <!-- рейтинг 4 -->        
+              <label for="fst-4">
+                <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                  <defs>
+                  <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#BC9CFF"/>
+                  <stop offset="1" stop-color="#8BA4F9"/>
+                  </linearGradient>
+                  </defs>
+                  </svg>                   
+              </label>
+              <input name="fst" id="fst-4" value="4" type="radio">            
+              <!-- рейтинг 5 -->    
+              <label for="fst-5">
+                <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                  <defs>
+                  <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#BC9CFF"/>
+                  <stop offset="1" stop-color="#8BA4F9"/>
+                  </linearGradient>
+                  </defs>
+                  </svg>                  
+              </label>
+              <input name="fst" id="fst-5" value="5" type="radio">
+          </div>
+      </div>
+      <a class="rooms__item-reviews-link" href="#">
+        <div class="rooms__item-reviews">
+          <p>145 Отзывов</p>
+        </div>
+      </a>
+      </div>
+      </div>    
+      
+    <div class="rooms__item">
+    <div class="rooms__item-slider">
+      <div class="rooms__item-img">
+        <img class="rooms__item-img-slider" src="images/cards/card2.jpg" alt="Image">
+      </div>
+      <div class="rooms__item-img">
+        <img class="rooms__item-img-slider" src="images/cards/card2.jpg" alt="Image">
+      </div>
+      <div class="rooms__item-img">
+        <img class="rooms__item-img-slider" src="images/cards/card2.jpg" alt="Image">
+      </div>
+      <div class="rooms__item-img">
+        <img class="rooms__item-img-slider" src="images/cards/card2.jpg" alt="Image">
+      </div>
+    </div>
+    <a class="rooms__item-box-link" href="#">  
+      <div class="rooms__item-box-top">
+      <div class="rooms__item-num">
+       <p><span>№ </span>840</p> 
+      </div>
+      <div class="rooms__item-class">
+        <p></p> 
+      </div>
+      <div class="rooms__item-price">
+        <p>9 990₽ в сутки</p>
+      </div>
+    </div>
+    </a>
+    <div class="rooms__item-box-footer">
+      <div class="rooms__item-rating">
+        <div class="rating-group">
+            <!-- по умолчанию 0 -->
+            <input name="fst2" value="0" type="radio" disabled checked>            
+            <!-- рейтинг 1 -->    
+            <label for="fst-6">
+              <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                <defs>
+                <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#BC9CFF"/>
+                <stop offset="1" stop-color="#8BA4F9"/>
+                </linearGradient>
+                </defs>
+                </svg>                               
+            </label>
+            <input name="fst2" id="fst-6" value="1" type="radio">            
+            <!-- рейтинг 2 -->    
+            <label for="fst-7">
+              <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                <defs>
+                <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#BC9CFF"/>
+                <stop offset="1" stop-color="#8BA4F9"/>
+                </linearGradient>
+                </defs>
+                </svg>                   
+            </label>
+            <input name="fst2" id="fst-7" value="2" type="radio">            
+            <!-- рейтинг 3 -->    
+            <label for="fst-8">
+              <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                <defs>
+                <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#BC9CFF"/>
+                <stop offset="1" stop-color="#8BA4F9"/>
+                </linearGradient>
+                </defs>
+                </svg>                 
+            </label>
+            <input name="fst2" id="fst-8" value="3" type="radio">            
+            <!-- рейтинг 4 -->        
+            <label for="fst-9">
+              <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                <defs>
+                <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#BC9CFF"/>
+                <stop offset="1" stop-color="#8BA4F9"/>
+                </linearGradient>
+                </defs>
+                </svg>                   
+            </label>
+            <input name="fst2" id="fst-9" value="4" type="radio" disabled checked>            
+            <!-- рейтинг 5 -->    
+            <label for="fst-10">
+              <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                <defs>
+                <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#BC9CFF"/>
+                <stop offset="1" stop-color="#8BA4F9"/>
+                </linearGradient>
+                </defs>
+                </svg>                  
+            </label>
+            <input name="fst2" id="fst-10" value="5" type="radio">
+        </div>
+    </div>
+    <a class="rooms__item-reviews-link" href="#">
+      <div class="rooms__item-reviews">
+        <p>65 Отзывов</p>
+      </div>
+    </a>
+    </div>
+    </div>
+    <div class="rooms__item">
+      <div class="rooms__item-slider">
+        <div class="rooms__item-img">
+          <img class="rooms__item-img-slider" src="images/cards/card3.jpg" alt="Image">
+        </div>
+        <div class="rooms__item-img">
+          <img class="rooms__item-img-slider" src="images/cards/card3.jpg" alt="Image">
+        </div>
+        <div class="rooms__item-img">
+          <img class="rooms__item-img-slider" src="images/cards/card3.jpg" alt="Image">
+        </div>
+        <div class="rooms__item-img">
+          <img class="rooms__item-img-slider" src="images/cards/card3.jpg" alt="Image">
+        </div>
+      </div>
+      <a class="rooms__item-box-link" href="#">  
+        <div class="rooms__item-box-top">
+        <div class="rooms__item-num">
+         <p><span>№ </span>980</p> 
+        </div>
+        <div class="rooms__item-class">
+          <p>люкс</p> 
+        </div>
+        <div class="rooms__item-price">
+          <p>8 500₽ в сутки</p>
+        </div>
+      </div>
+      </a>
+      <div class="rooms__item-box-footer">
+        <div class="rooms__item-rating">
+          <div class="rating-group">
+              <!-- по умолчанию 0 -->
+              <input name="fst3" value="0" type="radio">            
+              <!-- рейтинг 1 -->    
+              <label for="fst-11">
+                <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                  <defs>
+                  <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#BC9CFF"/>
+                  <stop offset="1" stop-color="#8BA4F9"/>
+                  </linearGradient>
+                  </defs>
+                  </svg>                               
+              </label>
+              <input name="fst3" id="fst-11" value="1" type="radio">            
+              <!-- рейтинг 2 -->    
+              <label for="fst-12">
+                <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                  <defs>
+                  <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#BC9CFF"/>
+                  <stop offset="1" stop-color="#8BA4F9"/>
+                  </linearGradient>
+                  </defs>
+                  </svg>                   
+              </label>
+              <input name="fst3" id="fst-12" value="2" type="radio">            
+              <!-- рейтинг 3 -->    
+              <label for="fst-13">
+                <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                  <defs>
+                  <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#BC9CFF"/>
+                  <stop offset="1" stop-color="#8BA4F9"/>
+                  </linearGradient>
+                  </defs>
+                  </svg>                 
+              </label>
+              <input name="fst3" id="fst-13" value="3" type="radio" disabled checked>            
+              <!-- рейтинг 4 -->        
+              <label for="fst-14">
+                <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                  <defs>
+                  <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#BC9CFF"/>
+                  <stop offset="1" stop-color="#8BA4F9"/>
+                  </linearGradient>
+                  </defs>
+                  </svg>                   
+              </label>
+              <input name="fst3" id="fst-14" value="4" type="radio">            
+              <!-- рейтинг 5 -->    
+              <label for="fst-15">
+                <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                  <defs>
+                  <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#BC9CFF"/>
+                  <stop offset="1" stop-color="#8BA4F9"/>
+                  </linearGradient>
+                  </defs>
+                  </svg>                  
+              </label>
+              <input name="fst3" id="fst-15" value="5" type="radio">
+          </div>
+      </div>
+      <a class="rooms__item-reviews-link" href="#">
+        <div class="rooms__item-reviews">
+          <p>35 Отзывов</p>
+        </div>
+      </a>
+      </div>
+      </div>
+      <div class="rooms__item">   
+        <div class="rooms__item-slider">
+          <div class="rooms__item-img">
+            <img class="rooms__item-img-slider" src="images/cards/card4.jpg" alt="Image">
+          </div>
+          <div class="rooms__item-img">
+            <img class="rooms__item-img-slider" src="images/cards/card4.jpg" alt="Image">
+          </div>
+          <div class="rooms__item-img">
+            <img class="rooms__item-img-slider" src="images/cards/card4.jpg" alt="Image">
+          </div>
+          <div class="rooms__item-img">
+            <img class="rooms__item-img-slider" src="images/cards/card4.jpg" alt="Image">
+          </div>
+        </div>
+        <a class="rooms__item-box-link" href="#">  
+          <div class="rooms__item-box-top">
+          <div class="rooms__item-num">
+           <p><span>№ </span>856</p> 
+          </div>
+          <div class="rooms__item-class">
+            <p></p> 
+          </div>
+          <div class="rooms__item-price">
+            <p>7 300₽ в сутки</p>
+          </div>
+        </div>
+        </a>
+        <div class="rooms__item-box-footer">
+          <div class="rooms__item-rating">
+            <div class="rating-group">
+                <input name="fst4" value="0" type="radio">            
+                <label for="fst-16">
+                  <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#BC9CFF"/>
+                    <stop offset="1" stop-color="#8BA4F9"/>
+                    </linearGradient>
+                    </defs>
+                    </svg>                               
+                </label>
+                <input name="fst4" id="fst-16" value="1" type="radio">            
+                <label for="fst-17">
+                  <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#BC9CFF"/>
+                    <stop offset="1" stop-color="#8BA4F9"/>
+                    </linearGradient>
+                    </defs>
+                    </svg>                   
+                </label>
+                <input name="fst4" id="fst-17" value="2" type="radio">            
+                <label for="fst-18">
+                  <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#BC9CFF"/>
+                    <stop offset="1" stop-color="#8BA4F9"/>
+                    </linearGradient>
+                    </defs>
+                    </svg>                 
+                </label>
+                <input name="fst4" id="fst-18" value="3" type="radio">         
+               <label for="fst-19">
+                  <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#BC9CFF"/>
+                    <stop offset="1" stop-color="#8BA4F9"/>
+                    </linearGradient>
+                    </defs>
+                    </svg>                   
+                </label>
+                <input name="fst4" id="fst-19" value="4" type="radio">            
+                <label for="fst-20">
+                  <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#BC9CFF"/>
+                    <stop offset="1" stop-color="#8BA4F9"/>
+                    </linearGradient>
+                    </defs>
+                    </svg>                  
+                </label>
+                <input name="fst4" id="fst-20" value="5" type="radio" disabled checked>
+            </div>
+        </div>
+        <a class="rooms__item-reviews-link" href="#">
+          <div class="rooms__item-reviews">
+            <p>19 Отзывов</p>
+          </div>
+        </a>
+        </div>
+        </div>
+        <div class="rooms__item">   
+          <div class="rooms__item-slider">
+            <div class="rooms__item-img">
+              <img class="rooms__item-img-slider" src="images/cards/card5.jpg" alt="Image">
+            </div>
+            <div class="rooms__item-img">
+              <img class="rooms__item-img-slider" src="images/cards/card5.jpg" alt="Image">
+            </div>
+            <div class="rooms__item-img">
+              <img class="rooms__item-img-slider" src="images/cards/card5.jpg" alt="Image">
+            </div>
+            <div class="rooms__item-img">
+              <img class="rooms__item-img-slider" src="images/cards/card5.jpg" alt="Image">
+            </div>
+          </div>
+          <a class="rooms__item-box-link" href="#">  
+            <div class="rooms__item-box-top">
+            <div class="rooms__item-num">
+             <p><span>№ </span>740</p> 
+            </div>
+            <div class="rooms__item-class">
+              <p></p> 
+            </div>
+            <div class="rooms__item-price">
+              <p>6 000₽ в сутки</p>
+            </div>
+          </div>
+          </a>
+          <div class="rooms__item-box-footer">
+            <div class="rooms__item-rating">
+              <div class="rating-group">
+                  <input name="fst5" value="0" type="radio">            
+                  <label for="fst-21">
+                    <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                      <defs>
+                      <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#BC9CFF"/>
+                      <stop offset="1" stop-color="#8BA4F9"/>
+                      </linearGradient>
+                      </defs>
+                      </svg>                               
+                  </label>
+                  <input name="fst5" id="fst-21" value="1" type="radio">            
+                  <label for="fst-22">
+                    <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                      <defs>
+                      <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#BC9CFF"/>
+                      <stop offset="1" stop-color="#8BA4F9"/>
+                      </linearGradient>
+                      </defs>
+                      </svg>                   
+                  </label>
+                  <input name="fst5" id="fst-22" value="2" type="radio">            
+                  <label for="fst-23">
+                    <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                      <defs>
+                      <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#BC9CFF"/>
+                      <stop offset="1" stop-color="#8BA4F9"/>
+                      </linearGradient>
+                      </defs>
+                      </svg>                 
+                  </label>
+                  <input name="fst5" id="fst-23" value="3" type="radio">         
+                 <label for="fst-24">
+                    <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                      <defs>
+                      <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#BC9CFF"/>
+                      <stop offset="1" stop-color="#8BA4F9"/>
+                      </linearGradient>
+                      </defs>
+                      </svg>                   
+                  </label>
+                  <input name="fst5" id="fst-24" value="4" type="radio" disabled checked>            
+                  <label for="fst-25">
+                    <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                      <defs>
+                      <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#BC9CFF"/>
+                      <stop offset="1" stop-color="#8BA4F9"/>
+                      </linearGradient>
+                      </defs>
+                      </svg>                  
+                  </label>
+                  <input name="fst5" id="fst-25" value="5" type="radio">
+              </div>
+          </div>
+          <a class="rooms__item-reviews-link" href="#">
+            <div class="rooms__item-reviews">
+              <p>44 Отзывов</p>
+            </div>
+          </a>
+          </div>
+          </div>
+          <div class="rooms__item">   
+            <div class="rooms__item-slider">
+              <div class="rooms__item-img">
+                <img class="rooms__item-img-slider" src="images/cards/card6.jpg" alt="Image">
+              </div>
+              <div class="rooms__item-img">
+                <img class="rooms__item-img-slider" src="images/cards/card6.jpg" alt="Image">
+              </div>
+              <div class="rooms__item-img">
+                <img class="rooms__item-img-slider" src="images/cards/card6.jpg" alt="Image">
+              </div>
+              <div class="rooms__item-img">
+                <img class="rooms__item-img-slider" src="images/cards/card6.jpg" alt="Image">
+              </div>
+            </div>
+            <a class="rooms__item-box-link" href="#">  
+              <div class="rooms__item-box-top">
+              <div class="rooms__item-num">
+               <p><span>№ </span>982</p> 
+              </div>
+              <div class="rooms__item-class">
+                <p></p> 
+              </div>
+              <div class="rooms__item-price">
+                <p>5 800₽ в сутки</p>
+              </div>
+            </div>
+            </a>
+            <div class="rooms__item-box-footer">
+              <div class="rooms__item-rating">
+                <div class="rating-group">
+                    <input name="fst6" value="0" type="radio">            
+                    <label for="fst-26">
+                      <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                        <defs>
+                        <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#BC9CFF"/>
+                        <stop offset="1" stop-color="#8BA4F9"/>
+                        </linearGradient>
+                        </defs>
+                        </svg>                               
+                    </label>
+                    <input name="fst6" id="fst-26" value="1" type="radio">            
+                    <label for="fst-27">
+                      <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                        <defs>
+                        <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#BC9CFF"/>
+                        <stop offset="1" stop-color="#8BA4F9"/>
+                        </linearGradient>
+                        </defs>
+                        </svg>                   
+                    </label>
+                    <input name="fst6" id="fst-27" value="2" type="radio">            
+                    <label for="fst-28">
+                      <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                        <defs>
+                        <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#BC9CFF"/>
+                        <stop offset="1" stop-color="#8BA4F9"/>
+                        </linearGradient>
+                        </defs>
+                        </svg>                 
+                    </label>
+                    <input name="fst6" id="fst-28" value="3" type="radio" disabled checked>         
+                   <label for="fst-29">
+                      <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                        <defs>
+                        <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#BC9CFF"/>
+                        <stop offset="1" stop-color="#8BA4F9"/>
+                        </linearGradient>
+                        </defs>
+                        </svg>                   
+                    </label>
+                    <input name="fst6" id="fst-29" value="4" type="radio">            
+                    <label for="fst-30">
+                      <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                        <defs>
+                        <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#BC9CFF"/>
+                        <stop offset="1" stop-color="#8BA4F9"/>
+                        </linearGradient>
+                        </defs>
+                        </svg>                  
+                    </label>
+                    <input name="fst6" id="fst-30" value="5" type="radio">
+                </div>
+            </div>
+            <a class="rooms__item-reviews-link" href="#">
+              <div class="rooms__item-reviews">
+                <p>56 Отзывов</p>
+              </div>
+            </a>
+            </div>
+            </div>
+            <div class="rooms__item">   
+              <div class="rooms__item-slider">
+                <div class="rooms__item-img">
+                  <img class="rooms__item-img-slider" src="images/cards/card7.jpg" alt="Image">
+                </div>
+                <div class="rooms__item-img">
+                  <img class="rooms__item-img-slider" src="images/cards/card7.jpg" alt="Image">
+                </div>
+                <div class="rooms__item-img">
+                  <img class="rooms__item-img-slider" src="images/cards/card7.jpg" alt="Image">
+                </div>
+                <div class="rooms__item-img">
+                  <img class="rooms__item-img-slider" src="images/cards/card7.jpg" alt="Image">
+                </div>
+              </div>
+              <a class="rooms__item-box-link" href="#">  
+                <div class="rooms__item-box-top">
+                <div class="rooms__item-num">
+                 <p><span>№ </span>678</p> 
+                </div>
+                <div class="rooms__item-class">
+                  <p></p> 
+                </div>
+                <div class="rooms__item-price">
+                  <p>5 500₽ в сутки</p>
+                </div>
+              </div>
+              </a>
+              <div class="rooms__item-box-footer">
+                <div class="rooms__item-rating">
+                  <div class="rating-group">
+                      <input name="fst7" value="0" type="radio">            
+                      <label for="fst-31">
+                        <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                          <defs>
+                          <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#BC9CFF"/>
+                          <stop offset="1" stop-color="#8BA4F9"/>
+                          </linearGradient>
+                          </defs>
+                          </svg>                               
+                      </label>
+                      <input name="fst7" id="fst-31" value="1" type="radio">            
+                      <label for="fst-32">
+                        <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                          <defs>
+                          <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#BC9CFF"/>
+                          <stop offset="1" stop-color="#8BA4F9"/>
+                          </linearGradient>
+                          </defs>
+                          </svg>                   
+                      </label>
+                      <input name="fst7" id="fst-32" value="2" type="radio">            
+                      <label for="fst-33">
+                        <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                          <defs>
+                          <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#BC9CFF"/>
+                          <stop offset="1" stop-color="#8BA4F9"/>
+                          </linearGradient>
+                          </defs>
+                          </svg>                 
+                      </label>
+                      <input name="fst7" id="fst-33" value="3" type="radio">         
+                     <label for="fst-34">
+                        <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                          <defs>
+                          <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#BC9CFF"/>
+                          <stop offset="1" stop-color="#8BA4F9"/>
+                          </linearGradient>
+                          </defs>
+                          </svg>                   
+                      </label>
+                      <input name="fst7" id="fst-34" value="4" type="radio">            
+                      <label for="fst-35">
+                        <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                          <defs>
+                          <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#BC9CFF"/>
+                          <stop offset="1" stop-color="#8BA4F9"/>
+                          </linearGradient>
+                          </defs>
+                          </svg>                  
+                      </label>
+                      <input name="fst7" id="fst-35" value="5" type="radio" disabled checked>
+                  </div>
+              </div>
+              <a class="rooms__item-reviews-link" href="#">
+                <div class="rooms__item-reviews">
+                  <p>45 Отзывов</p>
+                </div>
+              </a>
+              </div>
+              </div>
+              <div class="rooms__item">   
+                <div class="rooms__item-slider">
+                  <div class="rooms__item-img">
+                    <img class="rooms__item-img-slider" src="images/cards/card8.jpg" alt="Image">
+                  </div>
+                  <div class="rooms__item-img">
+                    <img class="rooms__item-img-slider" src="images/cards/card8.jpg" alt="Image">
+                  </div>
+                  <div class="rooms__item-img">
+                    <img class="rooms__item-img-slider" src="images/cards/card8.jpg" alt="Image">
+                  </div>
+                  <div class="rooms__item-img">
+                    <img class="rooms__item-img-slider" src="images/cards/card8.jpg" alt="Image">
+                  </div>
+                </div>
+                <a class="rooms__item-box-link" href="#">  
+                  <div class="rooms__item-box-top">
+                  <div class="rooms__item-num">
+                   <p><span>№ </span>450</p> 
+                  </div>
+                  <div class="rooms__item-class">
+                    <p></p> 
+                  </div>
+                  <div class="rooms__item-price">
+                    <p>5 300₽ в сутки</p>
+                  </div>
+                </div>
+                </a>
+                <div class="rooms__item-box-footer">
+                  <div class="rooms__item-rating">
+                    <div class="rating-group">
+                        <input name="fst8" value="0" type="radio">            
+                        <label for="fst-36">
+                          <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                            <defs>
+                            <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#BC9CFF"/>
+                            <stop offset="1" stop-color="#8BA4F9"/>
+                            </linearGradient>
+                            </defs>
+                            </svg>                               
+                        </label>
+                        <input name="fst8" id="fst-36" value="1" type="radio">            
+                        <label for="fst-37">
+                          <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                            <defs>
+                            <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#BC9CFF"/>
+                            <stop offset="1" stop-color="#8BA4F9"/>
+                            </linearGradient>
+                            </defs>
+                            </svg>                   
+                        </label>
+                        <input name="fst8" id="fst-37" value="2" type="radio">            
+                        <label for="fst-38">
+                          <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                            <defs>
+                            <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#BC9CFF"/>
+                            <stop offset="1" stop-color="#8BA4F9"/>
+                            </linearGradient>
+                            </defs>
+                            </svg>                 
+                        </label>
+                        <input name="fst8" id="fst-38" value="3" type="radio">         
+                       <label for="fst-39">
+                          <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                            <defs>
+                            <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#BC9CFF"/>
+                            <stop offset="1" stop-color="#8BA4F9"/>
+                            </linearGradient>
+                            </defs>
+                            </svg>                   
+                        </label>
+                        <input name="fst8" id="fst-39" value="4" type="radio" disabled checked>            
+                        <label for="fst-40">
+                          <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                            <defs>
+                            <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#BC9CFF"/>
+                            <stop offset="1" stop-color="#8BA4F9"/>
+                            </linearGradient>
+                            </defs>
+                            </svg>                  
+                        </label>
+                        <input name="fst8" id="fst-40" value="5" type="radio">
+                    </div>
+                </div>
+                <a class="rooms__item-reviews-link" href="#">
+                  <div class="rooms__item-reviews">
+                    <p>39 Отзывов</p>
+                  </div>
+                </a>
+                </div>
+                </div>
+                <div class="rooms__item">   
+                  <div class="rooms__item-slider">
+                    <div class="rooms__item-img">
+                      <img class="rooms__item-img-slider" src="images/cards/card9.jpg" alt="Image">
+                    </div>
+                    <div class="rooms__item-img">
+                      <img class="rooms__item-img-slider" src="images/cards/card9.jpg" alt="Image">
+                    </div>
+                    <div class="rooms__item-img">
+                      <img class="rooms__item-img-slider" src="images/cards/card9.jpg" alt="Image">
+                    </div>
+                    <div class="rooms__item-img">
+                      <img class="rooms__item-img-slider" src="images/cards/card9.jpg" alt="Image">
+                    </div>
+                  </div>
+                  <a class="rooms__item-box-link" href="#">  
+                    <div class="rooms__item-box-top">
+                    <div class="rooms__item-num">
+                     <p><span>№ </span>350</p> 
+                    </div>
+                    <div class="rooms__item-class">
+                      <p></p> 
+                    </div>
+                    <div class="rooms__item-price">
+                      <p>5 000₽ в сутки</p>
+                    </div>
+                  </div>
+                  </a>
+                  <div class="rooms__item-box-footer">
+                    <div class="rooms__item-rating">
+                      <div class="rating-group">
+                          <input name="fst9" value="0" type="radio">            
+                          <label for="fst-41">
+                            <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                              <defs>
+                              <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"/>
+                              <stop offset="1" stop-color="#8BA4F9"/>
+                              </linearGradient>
+                              </defs>
+                              </svg>                               
+                          </label>
+                          <input name="fst9" id="fst-41" value="1" type="radio">            
+                          <label for="fst-42">
+                            <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                              <defs>
+                              <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"/>
+                              <stop offset="1" stop-color="#8BA4F9"/>
+                              </linearGradient>
+                              </defs>
+                              </svg>                   
+                          </label>
+                          <input name="fst9" id="fst-42" value="2" type="radio">            
+                          <label for="fst-43">
+                            <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                              <defs>
+                              <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"/>
+                              <stop offset="1" stop-color="#8BA4F9"/>
+                              </linearGradient>
+                              </defs>
+                              </svg>                 
+                          </label>
+                          <input name="fst9" id="fst-43" value="3" type="radio" disabled checked>         
+                         <label for="fst-44">
+                            <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                              <defs>
+                              <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"/>
+                              <stop offset="1" stop-color="#8BA4F9"/>
+                              </linearGradient>
+                              </defs>
+                              </svg>                   
+                          </label>
+                          <input name="fst9" id="fst-44" value="4" type="radio">            
+                          <label for="fst-45">
+                            <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                              <defs>
+                              <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"/>
+                              <stop offset="1" stop-color="#8BA4F9"/>
+                              </linearGradient>
+                              </defs>
+                              </svg>                  
+                          </label>
+                          <input name="fst9" id="fst-45" value="5" type="radio">
+                      </div>
+                  </div>
+                  <a class="rooms__item-reviews-link" href="#">
+                    <div class="rooms__item-reviews">
+                      <p>77 Отзывов</p>
+                    </div>
+                  </a>
+                  </div>
+                  </div>
+                  <div class="rooms__item">   
+                    <div class="rooms__item-slider">
+                      <div class="rooms__item-img">
+                        <img class="rooms__item-img-slider" src="images/cards/card11.jpg" alt="Image">
+                      </div>
+                      <div class="rooms__item-img">
+                        <img class="rooms__item-img-slider" src="images/cards/card11.jpg" alt="Image">
+                      </div>
+                      <div class="rooms__item-img">
+                        <img class="rooms__item-img-slider" src="images/cards/card11.jpg" alt="Image">
+                      </div>
+                      <div class="rooms__item-img">
+                        <img class="rooms__item-img-slider" src="images/cards/card11.jpg" alt="Image">
+                      </div>
+                    </div>
+                    <a class="rooms__item-box-link" href="#">  
+                      <div class="rooms__item-box-top">
+                      <div class="rooms__item-num">
+                       <p><span>№ </span>666</p> 
+                      </div>
+                      <div class="rooms__item-class">
+                        <p></p> 
+                      </div>
+                      <div class="rooms__item-price">
+                        <p>5 000₽ в сутки</p>
+                      </div>
+                    </div>
+                    </a>
+                    <div class="rooms__item-box-footer">
+                      <div class="rooms__item-rating">
+                        <div class="rating-group">
+                            <input name="fst11" value="0" type="radio">            
+                            <label for="fst-51">
+                              <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                                <defs>
+                                <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#BC9CFF"/>
+                                <stop offset="1" stop-color="#8BA4F9"/>
+                                </linearGradient>
+                                </defs>
+                                </svg>                               
+                            </label>
+                            <input name="fst11" id="fst-51" value="1" type="radio">            
+                            <label for="fst-52">
+                              <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                                <defs>
+                                <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#BC9CFF"/>
+                                <stop offset="1" stop-color="#8BA4F9"/>
+                                </linearGradient>
+                                </defs>
+                                </svg>                   
+                            </label>
+                            <input name="fst11" id="fst-52" value="2" type="radio">            
+                            <label for="fst-53">
+                              <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                                <defs>
+                                <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#BC9CFF"/>
+                                <stop offset="1" stop-color="#8BA4F9"/>
+                                </linearGradient>
+                                </defs>
+                                </svg>                 
+                            </label>
+                            <input name="fst11" id="fst-53" value="3" type="radio">         
+                           <label for="fst-54">
+                              <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                                <defs>
+                                <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#BC9CFF"/>
+                                <stop offset="1" stop-color="#8BA4F9"/>
+                                </linearGradient>
+                                </defs>
+                                </svg>                   
+                            </label>
+                            <input name="fst10" id="fst-54" value="4" type="radio" disabled checked>            
+                            <label for="fst-55">
+                              <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                                <defs>
+                                <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#BC9CFF"/>
+                                <stop offset="1" stop-color="#8BA4F9"/>
+                                </linearGradient>
+                                </defs>
+                                </svg>                  
+                            </label>
+                            <input name="fst11" id="fst-55" value="5" type="radio">
+                        </div>
+                    </div>
+                    <a class="rooms__item-reviews-link" href="#">
+                      <div class="rooms__item-reviews">
+                        <p>25 Отзывов</p>
+                      </div>
+                    </a>
+                    </div>
+                    </div>
+                    <div class="rooms__item">   
+                      <div class="rooms__item-slider">
+                        <div class="rooms__item-img">
+                          <img class="rooms__item-img-slider" src="images/cards/card10.jpg" alt="Image">
+                        </div>
+                        <div class="rooms__item-img">
+                          <img class="rooms__item-img-slider" src="images/cards/card10.jpg" alt="Image">
+                        </div>
+                        <div class="rooms__item-img">
+                          <img class="rooms__item-img-slider" src="images/cards/card10.jpg" alt="Image">
+                        </div>
+                        <div class="rooms__item-img">
+                          <img class="rooms__item-img-slider" src="images/cards/card10.jpg" alt="Image">
+                        </div>
+                      </div>
+                      <a class="rooms__item-box-link" href="#">  
+                        <div class="rooms__item-box-top">
+                        <div class="rooms__item-num">
+                         <p><span>№ </span>444</p> 
+                        </div>
+                        <div class="rooms__item-class">
+                          <p></p> 
+                        </div>
+                        <div class="rooms__item-price">
+                          <p>5 000₽ в сутки</p>
+                        </div>
+                      </div>
+                      </a>
+                      <div class="rooms__item-box-footer">
+                        <div class="rooms__item-rating">
+                          <div class="rating-group">
+                              <input name="fst10" value="0" type="radio">            
+                              <label for="fst-46">
+                                <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                                  <defs>
+                                  <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                                  <stop stop-color="#BC9CFF"/>
+                                  <stop offset="1" stop-color="#8BA4F9"/>
+                                  </linearGradient>
+                                  </defs>
+                                  </svg>                               
+                              </label>
+                              <input name="fst10" id="fst-46" value="1" type="radio">            
+                              <label for="fst-47">
+                                <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                                  <defs>
+                                  <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                                  <stop stop-color="#BC9CFF"/>
+                                  <stop offset="1" stop-color="#8BA4F9"/>
+                                  </linearGradient>
+                                  </defs>
+                                  </svg>                   
+                              </label>
+                              <input name="fst10" id="fst-47" value="2" type="radio">            
+                              <label for="fst-48">
+                                <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                                  <defs>
+                                  <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                                  <stop stop-color="#BC9CFF"/>
+                                  <stop offset="1" stop-color="#8BA4F9"/>
+                                  </linearGradient>
+                                  </defs>
+                                  </svg>                 
+                              </label>
+                              <input name="fst10" id="fst-48" value="3" type="radio">         
+                             <label for="fst-49">
+                                <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                                  <defs>
+                                  <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                                  <stop stop-color="#BC9CFF"/>
+                                  <stop offset="1" stop-color="#8BA4F9"/>
+                                  </linearGradient>
+                                  </defs>
+                                  </svg>                   
+                              </label>
+                              <input name="fst10" id="fst-49" value="4" type="radio" disabled checked>            
+                              <label for="fst-50">
+                                <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                                  <defs>
+                                  <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                                  <stop stop-color="#BC9CFF"/>
+                                  <stop offset="1" stop-color="#8BA4F9"/>
+                                  </linearGradient>
+                                  </defs>
+                                  </svg>                  
+                              </label>
+                              <input name="fst10" id="fst-50" value="5" type="radio">
+                          </div>
+                      </div>
+                      <a class="rooms__item-reviews-link" href="#">
+                        <div class="rooms__item-reviews">
+                          <p>15 Отзывов</p>
+                        </div>
+                      </a>
+                      </div>
+                      </div>
+                      <div class="rooms__item">   
+                        <div class="rooms__item-slider">
+                          <div class="rooms__item-img">
+                            <img class="rooms__item-img-slider" src="images/cards/card12.jpg" alt="Image">
+                          </div>
+                          <div class="rooms__item-img">
+                            <img class="rooms__item-img-slider" src="images/cards/card12.jpg" alt="Image">
+                          </div>
+                          <div class="rooms__item-img">
+                            <img class="rooms__item-img-slider" src="images/cards/card12.jpg" alt="Image">
+                          </div>
+                          <div class="rooms__item-img">
+                            <img class="rooms__item-img-slider" src="images/cards/card12.jpg" alt="Image">
+                          </div>
+                        </div>
+                        <a class="rooms__item-box-link" href="#">  
+                          <div class="rooms__item-box-top">
+                          <div class="rooms__item-num">
+                           <p><span>№ </span>352</p> 
+                          </div>
+                          <div class="rooms__item-class">
+                            <p></p> 
+                          </div>
+                          <div class="rooms__item-price">
+                            <p>5 000₽ в сутки</p>
+                          </div>
+                        </div>
+                        </a>
+                        <div class="rooms__item-box-footer">
+                          <div class="rooms__item-rating">
+                            <div class="rating-group">
+                                <input name="fst12" value="0" type="radio">            
+                                <label for="fst-56">
+                                  <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                                    <defs>
+                                    <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#BC9CFF"/>
+                                    <stop offset="1" stop-color="#8BA4F9"/>
+                                    </linearGradient>
+                                    </defs>
+                                    </svg>                               
+                                </label>
+                                <input name="fst12" id="fst-56" value="1" type="radio">            
+                                <label for="fst-57">
+                                  <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                                    <defs>
+                                    <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#BC9CFF"/>
+                                    <stop offset="1" stop-color="#8BA4F9"/>
+                                    </linearGradient>
+                                    </defs>
+                                    </svg>                   
+                                </label>
+                                <input name="fst12" id="fst-57" value="2" type="radio">            
+                                <label for="fst-58">
+                                  <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                                    <defs>
+                                    <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#BC9CFF"/>
+                                    <stop offset="1" stop-color="#8BA4F9"/>
+                                    </linearGradient>
+                                    </defs>
+                                    </svg>                 
+                                </label>
+                                <input name="fst12" id="fst-58" value="3" type="radio" disabled checked>         
+                               <label for="fst-59">
+                                  <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                                    <defs>
+                                    <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#BC9CFF"/>
+                                    <stop offset="1" stop-color="#8BA4F9"/>
+                                    </linearGradient>
+                                    </defs>
+                                    </svg>                   
+                                </label>
+                                <input name="fst12" id="fst-59" value="4" type="radio">            
+                                <label for="fst-60">
+                                  <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.2637 15.25L4.07617 19L5.7168 11.9688L0.279297 7.23438L7.45117 6.625L10.2637 0.015625L13.0762 6.625L20.248 7.23438L14.8105 11.9688L16.4512 19L10.2637 15.25Z" fill="url(#paint0_linear_18381_411)"/>
+                                    <defs>
+                                    <linearGradient id="paint0_linear_18381_411" x1="10.2637" y1="-2" x2="10.2637" y2="22" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#BC9CFF"/>
+                                    <stop offset="1" stop-color="#8BA4F9"/>
+                                    </linearGradient>
+                                    </defs>
+                                    </svg>                  
+                                </label>
+                                <input name="fst12" id="fst-60" value="5" type="radio">
+                            </div>
+                        </div>
+                        <a class="rooms__item-reviews-link" href="#">
+                          <div class="rooms__item-reviews">
+                            <p>55 Отзывов</p>
+                          </div>
+                        </a>
+                        </div>
+                        </div>
+</div>
+<div class="pagination">
+  <a class="pagination__arrow pagination__arrow--disabled" href="#!">
+    <img class="pagination__arrow-icon" src="images/svg/pag-prev.svg" alt="Icon">
+  </a>
+<ul class="pagination__list">
+  <li class="pagination__list-item">
+    <a class="pagination__list-num pagination__list-num--active" href="#!">1</a>
+  </li>
+  <li class="pagination__list-item">
+    <a class="pagination__list-num" href="#!">2</a>
+  </li>
+  <li class="pagination__list-item">
+    <a class="pagination__list-num" href="#!">3</a>
+  </li>
+  <li class="pagination__list-item">
+    <a class="pagination__list-num" href="#!">...</a>
+  </li>
+  <li class="pagination__list-item">
+    <a class="pagination__list-num" href="#!">15</a>
+  </li>
+</ul>
+<a class="pagination__arrow" href="#!">
+  <img class="pagination__arrow-icon" src="images/svg/pag-next.svg" alt="Icon">
+</a>
+</div>
+<div class="pagination__text">
+  <p>1 – 12 из 100+ вариантов аренды</p>
+  </div>
+      </div> 
+    </section>
+  </div>
+</main>
+<div class="footer__content">
+    <div class="container">
+      <div class="footer__widgets">
+        <div class="footer__widgets-logo">
+          <a class="footer__widgets-logo-img-link"  href="#">
+            <img class="footer__widgets-logo-img" src="images/svg/logo.svg" alt="Toxin Logo">
+          </a>
+          <p class="footer__widgets-logo-text">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p>
+        </div>
+        <div class="footer__widgets-nav">
+          <h3 class="footer__widgets-nav-title">навигация</h3>
+          <a class="footer__widgets-nav-link" href="#!">О нас</a>
+          <a class="footer__widgets-nav-link" href="#!">Новости</a>
+          <a class="footer__widgets-nav-link" href="#!">Служба поддержки</a>
+          <a class="footer__widgets-nav-link" href="#!">Услуги</a>
+        </div>
+        <div class="footer__widgets-about">
+          <h3 class="footer__widgets-nav-title">о нас</h3>
+          <a class="footer__widgets-nav-link" href="#!">О сервисе</a>
+          <a class="footer__widgets-nav-link" href="#!">Наша команда</a>
+          <a class="footer__widgets-nav-link" href="#!">Вакансии</a>
+          <a class="footer__widgets-nav-link" href="#!">Инвесторы</a>
+        </div>
+        <div class="footer__widgets-support">
+          <h3 class="footer__widgets-nav-title">Служба поддержки</h3>
+          <a class="footer__widgets-nav-link" href="#!">Соглашения</a>
+          <a class="footer__widgets-nav-link" href="#!">Сообщества</a>
+          <a class="footer__widgets-nav-link" href="#!">Связь с нами</a>
+        </div>
+        <div class="footer__widgets-subscription">
+          <h3 class="footer__widgets-nav-title">Подписка</h3>
+          <p class="footer__widgets-subscription-text">Получайте специальные предложения и новости сервиса</p>
+          <form class="footer__widgets-subscription-form">              
+          <input class="footer__widgets-subscription-input" type="text" placeholder="Email">              
+          <button class="footer__widgets-subscription-btn">
+            <img src="images/svg/footer_input.svg" alt="Search">
+          </button>
+        </form>
+        </div>
+      </div>
+    </div>
+    <div class="footer__widgets-line">
+    </div>
+    <div class="container">
+      <div class="footer__bar">
+        <div class="footer__info">
+          <p class="footer__info-text">Copyright © 2018 Toxin отель. Все права защищены.</p>
+        </div>  
+        <div class="footer__info-social">
+          <a class="footer__info-social-link" href="#!"><i class="fa-brands fa-twitter footer__info-social-twitter"></i></a>
+          <a class="footer__info-social-link" href="#!"><i class="fa-brands fa-square-facebook footer__info-social-facebook"></i></a>
+          <a class="footer__info-social-link" href="#!"><i class="fa-brands fa-instagram footer__info-social-instagram"></i></a>
+        </div>
+      </div>  
+    </div>  
+  </div>  
+</footer>
+</div>
+
+<script src="js/main.min.js"></script>
+</body>
+</html>
