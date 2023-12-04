@@ -61,6 +61,11 @@
     .home__box-text{
         right: 100px;
     }
+    .rooms{
+        &__item{
+            grid-column: span 3;
+          }
+    }
 }
 
 @media (max-width:1040px) {
@@ -89,8 +94,13 @@
         order:-1;
         grid-column: span 2;
         grid-row: span 3;
+        height: auto;
     }
-
+    &__title{
+        font-size: 20px;
+    }
+    &__item-reviews,
+    &__item-price{font-size: 12px;}
     }
     .room{
         &__about {
@@ -111,6 +121,16 @@
     }
 }
 
+@media (max-width:880px){
+    .rooms__item{
+        grid-column: span 6;
+        max-width: 100%;
+    }    
+    .slick-slide img{
+        width: 100%;        
+    }
+}
+
 @media (max-width:768px) {
     .container{
         padding: 0px 20px;
@@ -127,7 +147,19 @@
     .rooms {
         &__card{
             grid-column: span 3;
-            margin: 0 auto;
+            margin: 0 auto;            
+        }
+        &__title{
+            font-size: 14px;
+        }
+        &__inner{
+            flex-wrap: wrap;
+        }
+        &__search-form input{
+            width: 100%;
+        }
+        &__items{
+            margin-top: 30px;
         }
     }
     .room{
@@ -138,6 +170,10 @@
             margin: 0 50px ;
         }
         }
+    .aside {
+        margin-right: 0px;
+        width: 100%;
+    }
 }
 
 @media (max-width:540px){
@@ -177,8 +213,7 @@
         }
     .rooms__card{
         max-width: 100%;
-        width: 100%;
-        height: auto;
+        width: 100%;        
         padding: 20px 15px 15px 15px;
     }
     .room__box-form-submit-arrow {
@@ -205,6 +240,16 @@
         grid-column: span 1;
         grid-row: span 1;
     }
+    .reg__inner,
+    .sign__inner{
+        width: 98%;
+        padding: 20px 15px 12px 15px;
+    }
+    .reg__title{
+        font-size: 20px;
+    }
+    .reg__form-link,
+    .sign__form-link{width: 50%;}
 }
 
 @media (max-width:375px) {
@@ -215,4 +260,7 @@
         max-width:33%;    }   
     }
     .room__card-text{font-size: .7em;}    
+    .legend {
+        margin-left: 5px;
+        line-height: 22px;}
 }

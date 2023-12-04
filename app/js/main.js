@@ -1,8 +1,13 @@
 $(function () {
     $('.header__btn-menu').on('click',function(){
-        $('.menu').toggleClass('menu--open');
+        $('.menu').toggleClass('menu--open');   
+        $('.menu__list-item').on('click',function(){
+            $('.menu--open').removeClass('menu--open');
+          });     
     });
     
+
+
     const picker = new easepick.create({
         element: document.getElementById('checkin'),
         css: [
