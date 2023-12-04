@@ -399,8 +399,10 @@
     &__search-form-additionally input[type="checkbox"]:checked,
     &__search-form-additionally input[type="checkbox"]:not(:checked)
     {
-        position: absolute;
-        left: -9999px;
+        position:absolute;
+        top:0; left:0;
+        visibility: hidden;
+        opacity: 0;
     }
     &__search-form-rules input[type="checkbox"]:checked + label, 
     &__search-form-availability input[type="checkbox"]:checked + label, 
